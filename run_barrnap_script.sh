@@ -20,6 +20,5 @@ output=${f%%.fasta}_16S.fasta
 awk "/^>/ {n++} n>1 {exit} {print}" $f > $output
 done;
 
-# Create a dir to move all 16S rRNA barrnap output files:
-mkdir 16SrRNA_barrnap_output
-mv *16S.fasta 16SrRNA_barrnap_output
+# Create a file to concatenate all 16S rRNA barrnap into one output file:
+cat *_16S.fasta >> 16SrRNA_barrnap_output.fasta
