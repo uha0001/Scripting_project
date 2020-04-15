@@ -1,8 +1,6 @@
 ### Scripting project for BIOL7180 (spring 2020)
 ### Group Members: Md Jahangir Alam, Ulku Huma Altindag, Basu Kafle and Natalia Rivera Rincon
 
-#### Link for slides: https://docs.google.com/presentation/d/1nn4kDjC8nf2vvM0b57m_eDB3oshiICv8_dZGDJ-7Azs/mobilepresent?slide=id.p
-
 The aim of this project is to analyze bacterial genomes using state-of-the-arts toolsets.
 
 Here is the main steps of the pipeline:
