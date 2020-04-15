@@ -13,3 +13,5 @@ tar xvzf alien_hunter.tar.gz && cd alien_hunter-1.7
 #usage alien_hunter file_name.fasta output_filename
 alien_hunter $*.fasta Output
 
+rpsblast -db database_name -query input_file -out output_file -num_descriptions 20 -num_alignments 20
+
