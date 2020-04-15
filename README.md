@@ -10,14 +10,17 @@ Filtering options: Kingdom: Bacteria, Group: Terrabacteria group, Subgroup: Firm
 RefSeq category: representative, Find Bacillus genome sequences.
 
 Step 2: Predict 16S rRNA sequence using Barrnap, then identify genome species by BLASTing predicted 16S rRNA against 16S Microbial RefSeq database.
+GitHub Link: https://github.com/mza0150/barrnap
 Instructions: use/run the following scripts: installing barrnap: install_barrnap_script.sh, running barrnap: run_barrnap_script.sh
 
 Step 3: Use Quast to find key features (e.g., #bp, #N50, #L50, #contigs etc) of all genomes
+GitHub Link: http://quast.sourceforge.net/docs/manual.html
 Instructions: genomes_statistics_quast.sh
 
 Step 4: Use prokka to annotate genomes.
 
 Step 5: Use antiSMASH to identify biosynthetic gene clusters(BGCs) in all genomes.
+Link: https://docs.antismash.secondarymetabolites.org/
 Instructions: use/run the following scripts: use install antiSMASH: install_antiSMASH.sh, run antiSMASH: run_antiSMASH.sh
 
 Step 6: Identify extent of Horizontal Gene Transfer (HGT).
