@@ -18,6 +18,7 @@ GitHub Link: http://quast.sourceforge.net/docs/manual.html
 Instructions: genomes_statistics_quast.sh
 
 Step 4: Use prokka to annotate genomes.
+GitHub Link: https://github.com/tseemann/prokka
 
 Step 5: Use antiSMASH to identify biosynthetic gene clusters(BGCs) in all genomes.
 Link: https://docs.antismash.secondarymetabolites.org/
