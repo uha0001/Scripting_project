@@ -11,7 +11,7 @@ RefSeq category: representative, Find Bacillus genome sequences.
 
 Step 2: Predict 16S rRNA sequence using Barrnap, then identify genome species by BLASTing predicted 16S rRNA against 16S Microbial RefSeq database.
 GitHub Link: https://github.com/mza0150/barrnap
-Instructions: use/run the following scripts: installing barrnap: install_barrnap_script.sh, running barrnap: run_barrnap_script.sh
+Instructions: use/run the following scripts: installing barrnap: install_barrnap_script.sh, running barrnap: run_barrnap_script.sh, finally run blastn and then parse: blastn_and_blast2table.sh
 
 Step 3: Use Quast to find key features (e.g., #bp, #N50, #L50, #contigs etc) of all genomes
 GitHub Link: http://quast.sourceforge.net/docs/manual.html
