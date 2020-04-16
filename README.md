@@ -34,10 +34,11 @@ Alien_hunter can be downloaded from:
 
 ```wget ftp://ftp.sanger.ac.uk/pub/resources/software/alien_hunter/alien_hunter.tar.gz```
 
-After unzipping the tar.gz file, make sure to follow the steps to complete HGT analysis.
+After unzipping the tar.gz file, make sure to follow the steps to complete HGT analysis:
+
+```tar xvzf alien_hunter.tar.gz```
 
 Before running the alien hunter make sure to move into the Alien_hunter-1.7 folder along with the data files:
-
 
 ```alien_hunter *.fasta Output_filename```
 
