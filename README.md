@@ -26,8 +26,7 @@ Instructions: use/run the following scripts: use install antiSMASH: install_anti
 
 Step 6: Identify extent of Horizontal Gene Transfer (HGT).
 In order to identify the horiontally transferred regions we will be using alien hunter for the raw sequence files from the first step.
-Alien_hunter can be downloaded from:
-Link: ftp://ftp.sanger.ac.uk/pub/resources/software/alien_hunter/alien_hunter.tar.gz
+Alien_hunter can be downloaded from:[arbitrary case-insensitive reference text]: ftp://ftp.sanger.ac.uk/pub/resources/software/alien_hunter/alien_hunter.tar.gz
 
 After unzipping the tar.gz file, make sure to follow the steps to complete HGT analysis.
 
