@@ -25,6 +25,17 @@ Link: https://docs.antismash.secondarymetabolites.org/
 Instructions: use/run the following scripts: use install antiSMASH: install_antiSMASH.sh, run antiSMASH: run_antiSMASH.sh
 
 Step 6: Identify extent of Horizontal Gene Transfer (HGT).
+In order to identify the horiontally transferred regions we will be using alien hunter for the raw sequence files from the first step.
+Alien_hunter can be downloaded from:
+Link: ftp://ftp.sanger.ac.uk/pub/resources/software/alien_hunter/alien_hunter.tar.gz
+
+After unzipping the tar.gz file, make sure to follow the steps to complete HGT analysis.
+
+Before running the alien hunter make sure to move into the Alien_hunter-1.7 folder along with the data files. 
+alien_hunter *.fasta Output_filename 
+
+output will generate a histogram in the text format giving the proportions of the horizontally tranferred regions. 
+
 
 Step 7: Identify homology of a specific gene of interest (e.g., P450).
 We are going to use rpsblast. We will need the raw data we had from the first step as a data base and the query that is going to be the output of the genome anottation step (f.e., P450).
