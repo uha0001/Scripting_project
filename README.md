@@ -25,7 +25,10 @@ Link: https://docs.antismash.secondarymetabolites.org/
 Instructions: use/run the following scripts: use install antiSMASH: install_antiSMASH.sh, run antiSMASH: run_antiSMASH.sh
 
 Step 6: Identify extent of Horizontal Gene Transfer (HGT).
-In order to identify the horiontally transferred regions we will be using alien hunter for the raw sequence files from the first step.
+
+This step is optional to the analysis. Whole genome sequences can be gathered from the Step 1
+In order to identify the horiontally transferred regions we will be using alien hunter with the raw sequences.
+
 
 Alien_hunter can be downloaded from: 
 
