@@ -29,6 +29,8 @@ Step 6: Identify extent of Horizontal Gene Transfer (HGT).
 This step is optional to the analysis. Whole genome sequences can be gathered from the Step 1
 In order to identify the horiontally transferred regions we will be using alien hunter with the raw sequences. Raw sequences should be split by '>' into a file each containing one sequence, and have the name of that file be the ID for alien hunter to work:
 
+```echo -e ">hello\nAAA\n>world\nATGCA" | awk '/^>/ {fout=sprintf("%s.fasta",substr($0,2));}{print >> fout;}' *.fna```
+
 Alien_hunter can be downloaded from using: 
 
 ```wget ftp://ftp.sanger.ac.uk/pub/resources/software/alien_hunter/alien_hunter.tar.gz```
