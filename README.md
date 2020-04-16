@@ -32,7 +32,7 @@ ftp://ftp.sanger.ac.uk/pub/resources/software/alien_hunter/alien_hunter.tar.gz
 After unzipping the tar.gz file, make sure to follow the steps to complete HGT analysis.
 
 Before running the alien hunter make sure to move into the Alien_hunter-1.7 folder along with the data files. 
-`<addr>`alien_hunter *.fasta Output_filename`<addr>`
+`<alien_hunter *.fasta Output_filename>`
 
 output will generate a histogram in the text format giving the proportions of the horizontally tranferred regions. 
 
