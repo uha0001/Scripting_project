@@ -15,7 +15,6 @@ tar xvzf alien_hunter.tar.gz && cd alien_hunter-1.7
 #echo -e ">hello\nAAA\n>world\nATGCA" | awk '/^>/ {fout=sprintf("%s.fasta",substr($0,2));}{print >> fout;}' *.fna
 
 #Alien_hunter calculates the percentage of each variable region depending on horizontally transferred or not.
-
 #usage alien_hunter file_name.fasta output_filename
 #alien_hunter *.fasta Output_Filename
 
