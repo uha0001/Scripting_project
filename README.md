@@ -21,23 +21,40 @@ Predict 16S rRNA sequence using Barrnap, then identify genome species by BLASTin
 
 Link for barrnap: https://github.com/mza0150/barrnap
 
-Instructions for installation: use/run the following scripts: To install in Alabama supercomputer (ASC) run to follwoing commands:
+Instructions for installation: To install in Alabama supercomputer (ASC) run to follwoing commands:
+We want to create our own conda environment to avoid any conflicts with other versions of dependencies.
+
 a. first load anaconda module:
 module load anaconda/2-4.2.0_cent
+
 b. then, create a conda environment:
 conda create -n barrnap_ENV
+
 c. then, Activate newly created barrnap environment:
 source activate barrnap_ENV
+
 d. finally, Install Barrnap into activated barrnap environment:
 conda install -c bioconda -c conda-forge barrnap
 
+Instructions for usage: 
+1. Make sure all the sequence files ( extentison w/ .fna in curent directory).
+run run_barrnap_script.sh to predict 16S rRNA. 
 
-Instructions for usage: 1. Make sure all the sequence files ( extentison w/ .fna in curent directory), run run_barrnap_script.sh to predict 16S rRNA. 2.run blastn and then parse: blastn_and_blast2table.sh
+2. Make sure the final output from run_barrnap_script.sh (16SrRNA_barrnap_output.fasta) is in the current directory.
+Also make sure blast2table.pl is installed and functioning properly (Follow instructions from Dr. Santos class).
+run blastn_and_blast2table.sh to blastn and purse.
 
 ### Step 3: Genome Sequence Quality Assesment
 Use Quast to find key features (e.g., #bp, #N50, #L50, #contigs etc) of all genomes
-GitHub Link: http://quast.sourceforge.net/docs/manual.html
-Instructions: genomes_statistics_quast.sh
+Link for more information: http://quast.sourceforge.net/docs/manual.html
+Instructions for installation:
+a. wget https://downloads.sourceforge.net/project/quast/quast-5.0.2.tar.gz
+b. tar -xzf quast-5.0.2.tar.gz
+c. cd quast-5.0.2
+
+Instructions for usage: make sure all the .fna files in current directory.
+run following commands to output result as Quast_Output:
+python quast.py *.fna -o Quast_Output
 
 ### Step 4: Genome Annotation
 Use prokka to annotate genomes.
@@ -45,8 +62,31 @@ GitHub Link: https://github.com/tseemann/prokka
 
 ### Step 5: Biosynthetic Gene Cluster Identification
 Use antiSMASH to identify biosynthetic gene clusters(BGCs) in all genomes.
-Link: https://docs.antismash.secondarymetabolites.org/
-Instructions: use/run the following scripts: use install antiSMASH: install_antiSMASH.sh, run antiSMASH: run_antiSMASH.sh
+Link for more information: https://docs.antismash.secondarymetabolites.org/
+
+Instructions for installation: To install antiSMASH in Alabama supercomputer (ASC) run the follwoing commands:
+We want to create our own conda environment to avoid any conflicts with other versions of dependencies.
+a. Load anaconda module:
+module load anaconda/2-4.2.0_cent
+
+b. then, create conda environment:
+conda create -n antismash antismash
+
+c. then activate just created antismasn environment:
+source activate antismash
+
+d. then, download antismash database:
+download-antismash-databases
+
+Note: This program requires using PFam database, if previous commands (step d) fail to download database,
+Pfam database can be downloaded from the link below: wget ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam30.0/Pfam-A.full.gz
+
+Instructions for usage:
+1. Make sure all the sequence files ( extentison w/ .fna in curent directory).
+run run_antiSMASH.sh to identify BGCs
+
+2. Makeu sure you are in the directory where all .fna and antismash output resides.
+run analyze_extract_bgc.sh to extract identified name of BGC clusters.
 
 ### Step 6: Identify extent of Horizontal Gene Transfer (HGT).
 
