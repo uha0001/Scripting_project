@@ -14,13 +14,24 @@ Here is the main steps of the pipeline:
 
 ### Step 1: Download Genomes
 Download 10 Bacillus draft genome sequences from NCBI database.: https://www.ncbi.nlm.nih.gov/genome/browse#!/prokaryotes/
-Filtering options: Kingdom: Bacteria, Group: Terrabacteria group, Subgroup: Firmicutes, Assembly level: Contig,
-RefSeq category: representative, Find Bacillus genome sequences.
+Filtering options: Kingdom: Bacteria, Group: Terrabacteria group, Subgroup: Firmicutes, Assembly level: Contig, RefSeq category : representative, Find Bacillus genome sequences.
 
 ### Step 2: Identify Species
 Predict 16S rRNA sequence using Barrnap, then identify genome species by BLASTing predicted 16S rRNA against 16S Microbial RefSeq database.
-GitHub Link: https://github.com/mza0150/barrnap
-Instructions: use/run the following scripts: installing barrnap: install_barrnap_script.sh, running barrnap: run_barrnap_script.sh, finally run blastn and then parse: blastn_and_blast2table.sh
+
+Link for barrnap: https://github.com/mza0150/barrnap
+
+Instructions for installation: use/run the following scripts: To install in Alabama supercomputer (ASC) run to follwoing commands: First load anaconda module:
+module load anaconda/2-4.2.0_cent
+then, create a conda environment:
+conda create -n barrnap_ENV
+then, Activate newly created barrnap environment:
+source activate barrnap_ENV
+finally, Install Barrnap into activated barrnap environment:
+conda install -c bioconda -c conda-forge barrnap
+
+
+Instructions for usage: 1. Make sure all the sequence files ( extentison w/ .fna in curent directory), run run_barrnap_script.sh to predict 16S rRNA. 2.run blastn and then parse: blastn_and_blast2table.sh
 
 ### Step 3: Genome Sequence Quality Assesment
 Use Quast to find key features (e.g., #bp, #N50, #L50, #contigs etc) of all genomes
