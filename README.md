@@ -21,13 +21,14 @@ Predict 16S rRNA sequence using Barrnap, then identify genome species by BLASTin
 
 Link for barrnap: https://github.com/mza0150/barrnap
 
-Instructions for installation: use/run the following scripts: To install in Alabama supercomputer (ASC) run to follwoing commands: First load anaconda module:
+Instructions for installation: use/run the following scripts: To install in Alabama supercomputer (ASC) run to follwoing commands:
+a. first load anaconda module:
 module load anaconda/2-4.2.0_cent
-then, create a conda environment:
+b. then, create a conda environment:
 conda create -n barrnap_ENV
-then, Activate newly created barrnap environment:
+c. then, Activate newly created barrnap environment:
 source activate barrnap_ENV
-finally, Install Barrnap into activated barrnap environment:
+d. finally, Install Barrnap into activated barrnap environment:
 conda install -c bioconda -c conda-forge barrnap
 
 
