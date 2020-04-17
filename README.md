@@ -93,16 +93,14 @@ run analyze_extract_bgc.sh to extract identified name of BGC clusters.
 
 ### Step 6: Identify extent of Horizontal Gene Transfer (HGT).
 
-This step is optional to the analysis. Whole genome sequences can be gathered from step 1:
-In order to identify the horiontally transferred regions we will be using alien hunter with the raw sequences. Raw sequences should be split by '>' into a file each containing one sequence, and have the name of that file be the ID for alien hunter to work:
+This step is optional to the analysis of horizontally transferred regions:
+In order to identify the horiontally transferred regions we will be using alien hunter with the raw sequences. 
+Link to alien_hunter: ftp://ftp.sanger.ac.uk/pub/resources/software/alien_hunter/alien_hunter.tar.gz
 
-Alien_hunter can be downloaded from using "install_alien_hunter.sh"
+The download is described in install_alien_hunter.sh 
 
-Before running the alien hunter make sure to move into the Alien_hunter-1.7 folder along with the data files:
-
-```alien_hunter *.fasta Output_filename```
-
-output will generate a histogram in the text format giving the proportions of the horizontally tranferred regions. 
+Before running the alien hunter make sure to move into the Alien_hunter-1.7 folder along with the data files. 
+Output will generate a histogram in the text format giving the proportions of the horizontally tranferred regions. 
 
 
 ### Step 7: Identify homology of a specific gene of interest (e.g., P450).
