@@ -1,7 +1,7 @@
 ### GROUP ID: 20A
 #### Scripting project for BIOL7180 (spring 2020)
 #### Group Members: Md Jahangir Alam, Ulku Huma Altindag, Basu Kafle and Natalia Rivera Rincon
-### Title: Analyze Bacterial Genomes Using State-of-the-Arts Toolsets.
+### Project Title: Analyze Bacterial Genomes Using State-of-the-Arts Toolsets.
 
 
 ### INTRODUCTION
@@ -25,34 +25,34 @@ Link for more information: https://github.com/mza0150/barrnap
 #### Instructions for installation:
 We want to create our own conda environment to avoid any conflicts with other versions of dependencies.To install in Alabama supercomputer (ASC) run to follwoing commands:
 
-a. first, load anaconda module:
+a. first, load anaconda module: 
 module load anaconda/2-4.2.0_cent
 
-b. then, create a conda environment:
+b. then, create a conda environment: 
 conda create -n barrnap_ENV
 
-c. then, Activate newly created barrnap environment:
+c. then, Activate newly created barrnap environment: 
 source activate barrnap_ENV
 
-d. finally, Install Barrnap into activated barrnap environment:
+d. finally, Install Barrnap into activated barrnap environment: 
 conda install -c bioconda -c conda-forge barrnap
 
 #### Instructions for usage: 
 1. Make sure all the sequence files ( extentison w/ .fna) in curent directory.
-run run_barrnap_script.sh to predict 16S rRNA. 
+Run run_barrnap_script.sh to predict 16S rRNA. 
 
 2. Make sure the final output from run_barrnap_script.sh (16SrRNA_barrnap_output.fasta) is in the current directory. Also make sure blast2table.pl is installed and functioning properly (Follow instructions from Dr. Santos class).
-run blastn_and_blast2table.sh to blastn and purse.
+Run blastn_and_blast2table.sh to blastn and purse.
 
 ### Step 3: Genome Sequence Quality Assesment.
 Use Quast to find key features (e.g., #bp, #N50, #L50, #contigs etc) of all genomes.
 Link for more information: http://quast.sourceforge.net/docs/manual.html
 
 #### Instructions for installation:
-Follow the steps below to download quast in ASC:
-a. wget https://downloads.sourceforge.net/project/quast/quast-5.0.2.tar.gz
-b. tar -xzf quast-5.0.2.tar.gz
-c. cd quast-5.0.2
+Follow the steps below to download quast in ASC: 
+a. wget https://downloads.sourceforge.net/project/quast/quast-5.0.2.tar.gz 
+b. tar -xzf quast-5.0.2.tar.gz 
+c. cd quast-5.0.2 
 
 #### Instructions for usage:
 Make sure all the genome sequence (extension w/ .fna) files in current directory.
@@ -70,16 +70,16 @@ Link for more information: https://docs.antismash.secondarymetabolites.org/
 #### Instructions for installation:
 We want to create our own conda environment to avoid any conflicts with other versions of dependencies. To install antiSMASH in Alabama supercomputer (ASC) run the follwoing commands:
 
-a. first, load anaconda module:
+a. first, load anaconda module: 
 module load anaconda/2-4.2.0_cent
 
-b. then, create conda environment:
+b. then, create conda environment: 
 conda create -n antismash antismash
 
-c. then activate just created antismasn environment:
+c. then activate just created antismasn environment: 
 source activate antismash
 
-d. then, download antismash database:
+d. then, download antismash database: 
 download-antismash-databases
 
 #### Note: This program requires using PFam database, if previous commands (step d) fail to download database,
