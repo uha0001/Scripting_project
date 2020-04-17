@@ -1,6 +1,10 @@
 #### Scripting project for BIOL7180 (spring 2020)
 ### Group Members: Md Jahangir Alam, Ulku Huma Altindag, Basu Kafle and Natalia Rivera Rincon
 
+### INTRODUCTION
+Genomic datasets are considered goldmine for research in biological science. The enormous amount of publicly available data opens up grat ptential for reserach, collaboration and development of new toolsets. The purpose of our current project is to utilize to current state-of-the-art toolsets to analyze publicly available bacterial genomes. Bacteria is ubiquitous, therefore analysis of bacterial genomes would give us key insights in many life science applications such as antibiotic discovery, natural product discovery, evolutionary strength, DNA modification etc. We want to download 10 Bacillus draft genome sequence from NCBI to look at some of the key features in its genomes to derive some useful information.
+ We want to select draft genomes that is not complete, but fewer number of contigs (~40) are provided. Our first goal is to predict species identity using a 16S rRNA prediction tool known as barrnap. The reason is that the species identity provided by the researcher in public database is occationally not reliable for draft genomes due to the frequent mistakes with high througput genome sequencing. In additin to that, now a days, 16S rRNA prediction tools give less error rate to identify bacterial species than experimentally sequenced 16S rRNA. Therefore we plan to predict 16S rRNA sequence using downloaded draft genomes using barrnap, then use that predicted sequence to BLASTn against 16S Microbial (NCBI) database to identify bacterial species.
+
 The aim of this project is to analyze bacterial genomes using state-of-the-arts toolsets.
 
 Here is the main steps of the pipeline:
