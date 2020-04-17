@@ -1,30 +1,31 @@
+### GROUP ID: 20A
 #### Scripting project for BIOL7180 (spring 2020)
-### Group Members: Md Jahangir Alam, Ulku Huma Altindag, Basu Kafle and Natalia Rivera Rincon
+#### Group Members: Md Jahangir Alam, Ulku Huma Altindag, Basu Kafle and Natalia Rivera Rincon
+### Title: Analyze Bacterial Genomes Using State-of-the-Arts Toolsets.
+
 
 ### INTRODUCTION
 Genomic datasets are considered goldmine for research in biological science. The enormous amount of publicly available data opens up grat ptential for reserach, collaboration and development of new toolsets. The purpose of our current project is to utilize to current state-of-the-art toolsets to analyze publicly available bacterial genomes. Bacteria is ubiquitous, therefore analysis of bacterial genomes would give us key insights in many life science applications such as antibiotic discovery, natural product discovery, evolutionary strength, DNA modification etc. We want to download 10 Bacillus draft genome sequence from NCBI to look at some of the key features in its genomes to derive some useful information.
 
- We want to select draft genomes that is not complete, but fewer number of contigs (~40) are provided. Our first goal is to predict species identity using a 16S rRNA prediction tool known as barrnap. The reason is that the species identity provided by the researcher in public database is occationally not reliable for draft genomes due to the frequent mistakes with high througput genome sequencing. In additin to that, now a days, 16S rRNA prediction tools give less error rate to identify bacterial species than experimentally sequenced 16S rRNA. Therefore we plan to predict 16S rRNA sequence using downloaded draft genomes using barrnap, then use that predicted sequence to BLASTn against 16S Microbial (NCBI) database to identify bacterial species. Assesment of genome sequence and assembly quality is important to identify the key characteistics of sequence. We plan to use Quast (QUality ASsessment Tool) to evaluate genome assmblies by computing various metrics such as #contigs, length of largest contig, total bp lengh, N50, N75, L50, L75, % GC, mismatches etc. For many decades, prokaryotes (bacteria and archea) and lower eukaryotes (fungi) have been used as a potential source for novel natual product discovery. Very often, the genes corresponding for producing whole metabolic pathway are colocated together as an operon in bacteria those are reffered as biosynthetic gene clusters (BGCs). Many computational tools are available to identify BGCs in bacterial and fungal genomes such as antiSMASH, PRISM, ARTS etc. We plan to use antiSMASH to identify BGCs present in bacillus genomes.
+We want to select draft genomes that is not complete, but fewer number of contigs (~40) are provided. Our first goal is to predict species identity using a 16S rRNA prediction tool known as barrnap. The reason is that the species identity provided by the researcher in public database is occationally not reliable for draft genomes due to the frequent mistakes with high througput genome sequencing. In additin to that, now a days, 16S rRNA prediction tools give less error rate to identify bacterial species than experimentally sequenced 16S rRNA. Therefore we plan to predict 16S rRNA sequence using downloaded draft genomes using barrnap, then use that predicted sequence to BLASTn against 16S Microbial (NCBI) database to identify bacterial species. Assesment of genome sequence and assembly quality is important to identify the key characteistics of sequence. We plan to use Quast (QUality ASsessment Tool) to evaluate genome assmblies by computing various metrics such as #contigs, length of largest contig, total bp lengh, N50, N75, L50, L75, % GC, mismatches etc. For many decades, prokaryotes (bacteria and archea) and lower eukaryotes (fungi) have been used as a potential source for novel natual product discovery. Very often, the genes corresponding for producing whole metabolic pathway are colocated together as an operon in bacteria those are reffered as biosynthetic gene clusters (BGCs). Many computational tools are available to identify BGCs in bacterial and fungal genomes such as antiSMASH, PRISM, ARTS etc. We plan to use antiSMASH to identify BGCs present in bacillus genomes.
  
- 
 
-### The aim of this project is to analyze bacterial genomes using state-of-the-arts toolsets.
 
-Here is the main steps of the pipeline:
+ ## Pipeline for analysis:
 
-### Step 1: Download Genomes
+### Step 1: Download Genomes.
 Download 10 Bacillus draft genome sequences from NCBI database.: https://www.ncbi.nlm.nih.gov/genome/browse#!/prokaryotes/
 Filtering options: Kingdom: Bacteria, Group: Terrabacteria group, Subgroup: Firmicutes, Assembly level: Contig, RefSeq category : representative, Find Bacillus genome sequences.
 
-### Step 2: Identify Species
+### Step 2: Identify Species.
 Predict 16S rRNA sequence using Barrnap, then identify genome species by BLASTing predicted 16S rRNA against 16S Microbial RefSeq database.
 
-Link for barrnap: https://github.com/mza0150/barrnap
+Link for more information: https://github.com/mza0150/barrnap
 
-Instructions for installation: To install in Alabama supercomputer (ASC) run to follwoing commands:
-We want to create our own conda environment to avoid any conflicts with other versions of dependencies.
+#### Instructions for installation:
+We want to create our own conda environment to avoid any conflicts with other versions of dependencies.To install in Alabama supercomputer (ASC) run to follwoing commands:
 
-a. first load anaconda module:
+a. first, load anaconda module:
 module load anaconda/2-4.2.0_cent
 
 b. then, create a conda environment:
@@ -36,37 +37,40 @@ source activate barrnap_ENV
 d. finally, Install Barrnap into activated barrnap environment:
 conda install -c bioconda -c conda-forge barrnap
 
-Instructions for usage: 
-1. Make sure all the sequence files ( extentison w/ .fna in curent directory).
+#### Instructions for usage: 
+1. Make sure all the sequence files ( extentison w/ .fna) in curent directory.
 run run_barrnap_script.sh to predict 16S rRNA. 
 
-2. Make sure the final output from run_barrnap_script.sh (16SrRNA_barrnap_output.fasta) is in the current directory.
-Also make sure blast2table.pl is installed and functioning properly (Follow instructions from Dr. Santos class).
+2. Make sure the final output from run_barrnap_script.sh (16SrRNA_barrnap_output.fasta) is in the current directory. Also make sure blast2table.pl is installed and functioning properly (Follow instructions from Dr. Santos class).
 run blastn_and_blast2table.sh to blastn and purse.
 
-### Step 3: Genome Sequence Quality Assesment
-Use Quast to find key features (e.g., #bp, #N50, #L50, #contigs etc) of all genomes
+### Step 3: Genome Sequence Quality Assesment.
+Use Quast to find key features (e.g., #bp, #N50, #L50, #contigs etc) of all genomes.
 Link for more information: http://quast.sourceforge.net/docs/manual.html
-Instructions for installation:
+
+#### Instructions for installation:
+Follow the steps below to download quast in ASC:
 a. wget https://downloads.sourceforge.net/project/quast/quast-5.0.2.tar.gz
 b. tar -xzf quast-5.0.2.tar.gz
 c. cd quast-5.0.2
 
-Instructions for usage: make sure all the .fna files in current directory.
+#### Instructions for usage:
+Make sure all the genome sequence (extension w/ .fna) files in current directory.
 run following commands to output result as Quast_Output:
 python quast.py *.fna -o Quast_Output
 
-### Step 4: Genome Annotation
+### Step 4: Genome Annotation.
 Use prokka to annotate genomes.
 GitHub Link: https://github.com/tseemann/prokka
 
-### Step 5: Biosynthetic Gene Cluster Identification
-Use antiSMASH to identify biosynthetic gene clusters(BGCs) in all genomes.
+### Step 5: Biosynthetic Gene Cluster Identification.
+Using antiSMASH to identify biosynthetic gene clusters(BGCs) in all genomes.
 Link for more information: https://docs.antismash.secondarymetabolites.org/
 
-Instructions for installation: To install antiSMASH in Alabama supercomputer (ASC) run the follwoing commands:
-We want to create our own conda environment to avoid any conflicts with other versions of dependencies.
-a. Load anaconda module:
+#### Instructions for installation:
+We want to create our own conda environment to avoid any conflicts with other versions of dependencies. To install antiSMASH in Alabama supercomputer (ASC) run the follwoing commands:
+
+a. first, load anaconda module:
 module load anaconda/2-4.2.0_cent
 
 b. then, create conda environment:
@@ -78,14 +82,14 @@ source activate antismash
 d. then, download antismash database:
 download-antismash-databases
 
-Note: This program requires using PFam database, if previous commands (step d) fail to download database,
+#### Note: This program requires using PFam database, if previous commands (step d) fail to download database,
 Pfam database can be downloaded from the link below: wget ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam30.0/Pfam-A.full.gz
 
-Instructions for usage:
+#### Instructions for usage:
 1. Make sure all the sequence files ( extentison w/ .fna in curent directory).
 run run_antiSMASH.sh to identify BGCs
 
-2. Makeu sure you are in the directory where all .fna and antismash output resides.
+2. Make sure you are in the directory where all genome sequence (extension w/ .fna) files and antismash output folders (output from antiSMASH) located.
 run analyze_extract_bgc.sh to extract identified name of BGC clusters.
 
 ### Step 6: Identify extent of Horizontal Gene Transfer (HGT).
