@@ -104,10 +104,8 @@ Output will generate a histogram in the text format giving the proportions of th
 
 
 ### Step 7: Identify homology of a specific gene of interest (e.g., P450).
-We are going to use rpsblast. We will need the raw data we had from the first step as a data base and the query that is going to be the output of the genome anottation step (f.e., P450).
-We need to prepare the files of the genes we want to work with for that you are going to.....
+We are going to use rpsblast. We will need the raw data we had from the first step as a data base and the query that is going to be the output of the genome anottation step (f.e., P450). To get this Data ready you need to run makeblastdb.sh
 
+After you have the necessary input you need to run the next command changing the names of the -query and -out. The number of the descriptions and alignments are set as 20 but you can change it accordling to your needs. 
 
-After you have the necessary input you need to run the next command changing the names of the -db -query and -out. The number are already as 20 but you can change it accordling to your needs.  
-
->rpsblast -db database_name -query input_file -out output_file -num_descriptions 20 -num_alignments 20
+>rpsblast -db Data_Base.frn -query input_file -out output_file -num_descriptions 20 -num_alignments 20
