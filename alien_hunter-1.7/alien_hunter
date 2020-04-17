@@ -1,0 +1,42 @@
+#!/bin/sh
+
+#shell script that sets the CLASSPATH for the biojava classes
+#and runs the alien_hunter.pl script with the user arguments
+
+#author George Vernikos <gsv(at)sanger.ac.uk>
+
+#LICENSE
+#This program is free software; you can redistribute it and/or
+#modify it under the terms of the GNU General Public License
+#as published by the Free Software Foundation; either version 2
+#of the License, or (at your option) any later version.
+#
+#This program is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+
+#You should have received a copy of the GNU General Public License
+#along with this program; if not, write to the Free Software
+#Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+
+
+#$1 sequence file
+#$2 output
+#$3 -a | -c | -i
+#$4 -a | -c | -i
+#$5 -a | -c | -i
+
+USERPATH=`dirname $0`
+
+CLASSPATH=${CLASSPATH}:$USERPATH/biojava/biojava-1.4_new.jar
+CLASSPATH=${CLASSPATH}:$USERPATH/biojava/commons-cli.jar
+CLASSPATH=${CLASSPATH}:$USERPATH/biojava/commons-collections-2.1.jar
+CLASSPATH=${CLASSPATH}:$USERPATH/biojava/commons-dbcp-1.1.jar
+CLASSPATH=${CLASSPATH}:$USERPATH/biojava/commons-pool-1.1.jar
+CLASSPATH=${CLASSPATH}:$USERPATH/biojava/bytecode-0.92.jar
+CLASSPATH=${CLASSPATH}:$USERPATH/
+
+export CLASSPATH
+
+perl $USERPATH/alien_hunter.pl -f $1 -o $2 $3 $4 $5

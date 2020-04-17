@@ -1,0 +1,56 @@
+SUMMARY
+
+alien_hunter is a software for the prediction of Genomic Islands
+with the implementation of Interpolated Variable Order Motifs (IVOMs)
+capturing sequence compositional biases in various levels (e.g. G+C,
+dinucleotide, codon bias). Optionally the predictions can be parsed into
+a 2 state 2nd order Hidden Markov Model (HMM) to optimize the predicted
+boundaries using a change-point detection framework. Finally the predictions
+(embl format) can be automatically loaded into Artemis genome viewer freely
+available at: http://www.sanger.ac.uk/Software/Artemis/
+
+RELEASE
+
+The current release is 1.7
+
+INSTALLATION
+In order to run alien_hunter, PERL (http://www.perl.com/) and Java Runtime Environment
+(http://java.sun.com/) must be already installed. The software has been tested on 
+PERL v5.6.1 and JAVA SDK v1.4.2.
+
+After downloading alien_hunter.tar.gz change directory to the directory you wish 
+to install alien_hunter in (~/ in this example). Uncompress and untar the 
+alien_hunter.tar.gz file. On UNIX the command is: 
+gzip -d < alien_hunter.tar.gz | tar xf - 
+
+This will create a directory called ~/alien_hunter which will contain all the 
+files necessary for running alien_hunter. 
+If JAVA and PERL is correctly setup on your system, type: ./alien_hunter on
+the command line to get the manpage of alien_hunter.
+To correctly setup your system for the artemis (art) executable visit:
+http://www.sanger.ac.uk/Software/Artemis/v8/manual/installation.html and follow
+the instructions. If the setup is not proper the "-a" option of alien_hunter will not
+work.
+
+(If taken from CVS you should compile the two java files first)
+
+AUTHOR
+
+For questions or comments contact gsv(at)sanger.ac.uk
+
+LICENSE
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+
