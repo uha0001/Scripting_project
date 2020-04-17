@@ -1,4 +1,5 @@
 #!/bin/bash
+
 #In this first part we are going to move to the folder with the output from the annotation and pasting in a single file the 
 #Data_base.fa all the genomes
 cd ~/Scripting_project/Prokka
