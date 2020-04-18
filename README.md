@@ -111,3 +111,8 @@ We are going to use rpsblast. We will need the raw data we had from the first st
 After you have the necessary input you need to run the next command inside the Individual_query folder and change the names of the -query and -out. The number of the descriptions and alignments are set as 20 but you can change it accordling to your needs. 
 
 ```rpsblast -db Data_Base.frn -query input_file -out output_file -num_descriptions 20 -num_alignments 20```
+
+
+
+
+### References:
