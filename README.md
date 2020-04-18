@@ -107,3 +107,10 @@ Output will generate a histogram in the text format giving the proportions of th
 
 
 ### References:
+1. https://github.com/tseemann/barrnap
+2. http://webhome.auburn.edu/~santosr/scripts/blast2table.prl
+3. Altschul, S. F.; Gish, W.; Miller, W.; Myers, E. W.; Lipman, D. J.; J. Mol. Biol. 1990, 215 (3), 403–410
+4. Gurevich, A.; Saveliev, V.; Vyahhi, N.; Tesler, G.; Bioinformatics 2013, 29 (8), 1072–1075
+5. Seemann, T.; Bioinformatics 2014, 30 (14), 2068–2069
+6. Blin, K.; Wolf, T.; Chevrette, M. G.; Lu, X.; Schwalen, C. J.; Kautsar, S. A.; Suarez Duran, H. G.; de los Santos, E. L. C.; Kim, H. U.; Nave, M.; Dickschat, J. S.; Mitchell, D. A.; Shelest, E.; Breitling, R.; Takano, E.; Lee, S. Y.; Weber, T.; Medema, M. H.; Nucleic Acids Res 2017, 45 (W1), W36–W41
+7. Vernikos, G. S.; Parkhill, J.; Bioinformatics 2006, 22 (18), 2196–2203
