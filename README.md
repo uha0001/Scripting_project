@@ -22,7 +22,7 @@ Predict 16S rRNA sequence using Barrnap, then identify genome species by BLASTin
 Link for more information: https://github.com/mza0150/barrnap
 
 #### Instructions for installation:
-We want to create our own conda environment to avoid any conflicts with other versions of dependencies.To install in Alabama supercomputer (ASC) run to follwoing commands:
+We want to create our own conda environment to avoid any conflicts with other versions of dependencies.To install in Alabama supercomputer (ASC) run to following commands:
 
 a. first, load anaconda module: 
 module load anaconda/2-4.2.0_cent
@@ -93,7 +93,7 @@ run analyze_extract_bgc.sh to extract identified name of BGC clusters.
 
 ### Step 6: Identify extent of Horizontal Gene Transfer (HGT).
 
-### Instructions fir installation:
+### Instructions for installation:
 This step is optional to the analysis of horizontally transferred regions:
 In order to identify the horiontally transferred regions we will be using alien hunter with the raw sequences. 
 Link to alien_hunter: ```wget ftp://ftp.sanger.ac.uk/pub/resources/software/alien_hunter/alien_hunter.tar.gz```
