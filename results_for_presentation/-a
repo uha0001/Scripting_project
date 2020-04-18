@@ -1,0 +1,45 @@
+FT   misc_feature    1..20000
+FT                   /colour=255 0 0
+FT                   /algorithm="alien_hunter"
+FT                   /note="threshold: 20.365"
+FT                   /score=67.647
+FT   misc_feature    295000..300000
+FT                   /colour=255 215 215
+FT                   /algorithm="alien_hunter"
+FT                   /note="threshold: 20.365"
+FT                   /score=27.794
+FT   misc_feature    305000..317500
+FT                   /colour=255 223 223
+FT                   /algorithm="alien_hunter"
+FT                   /note="threshold: 20.365"
+FT                   /score=26.227
+FT   misc_feature    545000..555000
+FT                   /colour=255 189 189
+FT                   /algorithm="alien_hunter"
+FT                   /note="threshold: 20.365"
+FT                   /score=32.565
+FT   misc_feature    597500..615000
+FT                   /colour=255 56 56
+FT                   /algorithm="alien_hunter"
+FT                   /note="threshold: 20.365"
+FT                   /score=57.238
+FT   misc_feature    677500..690000
+FT                   /colour=255 183 183
+FT                   /algorithm="alien_hunter"
+FT                   /note="threshold: 20.365"
+FT                   /score=33.682
+FT   misc_feature    760000..765000
+FT                   /colour=255 238 238
+FT                   /algorithm="alien_hunter"
+FT                   /note="threshold: 20.365"
+FT                   /score=23.429
+FT   misc_feature    777500..787500
+FT                   /colour=255 220 220
+FT                   /algorithm="alien_hunter"
+FT                   /note="threshold: 20.365"
+FT                   /score=26.920
+FT   misc_feature    790000..795000
+FT                   /colour=255 227 227
+FT                   /algorithm="alien_hunter"
+FT                   /note="threshold: 20.365"
+FT                   /score=25.509
