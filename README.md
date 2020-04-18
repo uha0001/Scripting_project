@@ -58,9 +58,9 @@ Make sure all the genome sequence (extension w/ .fna) files in current directory
 run following commands to output result as Quast_Output:
 python quast.py *.fna -o Quast_Output
 
-### Step 4: Genome Annotation.
-Use prokka to annotate genomes.
-GitHub Link: https://github.com/tseemann/prokka
+### Step 4: Genome Annotation using Prokka
+Prokka is a software tool to annotate bacterial, archaeal and viral genomes quickly and produce standards-compliant output files
+For detail about installation and use of this tool, move into "Prokka" sub-directory.
 
 ### Step 5: Biosynthetic Gene Cluster Identification.
 Using antiSMASH to identify biosynthetic gene clusters(BGCs) in all genomes.
