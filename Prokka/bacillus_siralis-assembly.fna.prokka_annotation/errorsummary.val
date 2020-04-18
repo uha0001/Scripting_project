@@ -1,0 +1,4 @@
+     1 ERROR:   SEQ_FEAT.BadProteinName
+  7904 ERROR:   SEQ_FEAT.GeneXrefWithoutGene
+     1 ERROR:   SEQ_FEAT.OnlyGeneXrefs
+     8 WARNING: SEQ_FEAT.ProteinNameEndsInBracket

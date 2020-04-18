@@ -93,21 +93,21 @@ run analyze_extract_bgc.sh to extract identified name of BGC clusters.
 
 ### Step 6: Identify extent of Horizontal Gene Transfer (HGT).
 
+### Instructions fir installation:
 This step is optional to the analysis of horizontally transferred regions:
 In order to identify the horiontally transferred regions we will be using alien hunter with the raw sequences. 
-Link to alien_hunter: ftp://ftp.sanger.ac.uk/pub/resources/software/alien_hunter/alien_hunter.tar.gz
+Link to alien_hunter: ```wget ftp://ftp.sanger.ac.uk/pub/resources/software/alien_hunter/alien_hunter.tar.gz```
 
-The download is described in install_alien_hunter.sh 
+The download is described in "install_alien_hunter.sh" script
 
-Before running the alien hunter make sure to move into the Alien_hunter-1.7 folder along with the data files. 
+### Instructions for usage:
+Before running the alien_hunter make sure to move into the Alien_hunter-1.7 folder along with the data files. The process is described in the "horizontal_gene_transfer.sh" script.
 Output will generate a histogram in the text format giving the proportions of the horizontally tranferred regions. 
 
 
 ### Step 7: Identify homology of a specific gene of interest (e.g., P450).
-We are going to use rpsblast. We will need the raw data we had from the first step as a data base and the query that is going to be the output of the genome anottation step (f.e., P450).
-We need to prepare the files of the genes we want to work with for that you are going to.....
+We are going to use rpsblast. We will need the raw data we had from the first step as a data base and the query that is going to be the output of the genome anottation step (f.e., P450). To get this Data ready you need to run makeblastdb.sh, which is going to created a database and a Individual_query folder with all the input that you will need. 
 
+After you have the necessary input you need to run the next command inside the Individual_query folder and change the names of the -query and -out. The number of the descriptions and alignments are set as 20 but you can change it accordling to your needs. 
 
-After you have the necessary input you need to run the next command changing the names of the -db -query and -out. The number are already as 20 but you can change it accordling to your needs.  
-
->rpsblast -db database_name -query input_file -out output_file -num_descriptions 20 -num_alignments 20
+```rpsblast -db Data_Base.frn -query input_file -out output_file -num_descriptions 20 -num_alignments 20```
