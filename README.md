@@ -93,16 +93,21 @@ run analyze_extract_bgc.sh to extract identified name of BGC clusters.
 
 ### Step 6: Identify extent of Horizontal Gene Transfer (HGT).
 
+Alien_hunter is a program that uses the k-means clustering to calculate scores for each of the genomic sequences following the sliding window approach. 
+
 ### Instructions for installation:
 This step is optional to the analysis of horizontally transferred regions:
 In order to identify the horiontally transferred regions we will be using alien hunter with the raw sequences. 
-Link to alien_hunter: ```wget ftp://ftp.sanger.ac.uk/pub/resources/software/alien_hunter/alien_hunter.tar.gz```
+Link to download alien_hunter to ASC account: ```wget ftp://ftp.sanger.ac.uk/pub/resources/software/alien_hunter/alien_hunter.tar.gz```
 
 The download is described in "install_alien_hunter.sh" script
 
 ### Instructions for usage:
-Before running the alien_hunter make sure to move into the Alien_hunter-1.7 folder along with the data files. The process is described in the "horizontal_gene_transfer.sh" script.
-Output will generate a histogram in the text format giving the proportions of the horizontally tranferred regions. 
+Before running the alien_hunter make sure to move into the Alien_hunter-1.7 folder along with the data files (w/ extension .fna. 
+
+The process is described in the "horizontal_gene_transfer.sh" script. This script needs to be submitted in the queue system. 
+
+Output will generate a histogram in the text format and raw scores in the output file w./.sco giving the proportions of the horizontally tranferred regions. 
 
 
 
@@ -114,3 +119,5 @@ Output will generate a histogram in the text format giving the proportions of th
 5. Seemann, T.; Bioinformatics 2014, 30 (14), 2068–2069
 6. Blin, K.; Wolf, T.; Chevrette, M. G.; Lu, X.; Schwalen, C. J.; Kautsar, S. A.; Suarez Duran, H. G.; de los Santos, E. L. C.; Kim, H. U.; Nave, M.; Dickschat, J. S.; Mitchell, D. A.; Shelest, E.; Breitling, R.; Takano, E.; Lee, S. Y.; Weber, T.; Medema, M. H.; Nucleic Acids Res 2017, 45 (W1), W36–W41
 7. Vernikos, G. S.; Parkhill, J.; Bioinformatics 2006, 22 (18), 2196–2203
+8. https://www.sanger.ac.uk/science/tools/alien-hunter
+
