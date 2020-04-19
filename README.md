@@ -98,7 +98,9 @@ Alien_hunter is a program that uses the k-means clustering to calculate scores f
 ### Instructions for installation:
 This step is optional to the analysis of horizontally transferred regions:
 In order to identify the horiontally transferred regions we will be using alien hunter with the raw sequences. 
-Link to download alien_hunter to ASC account: ```wget ftp://ftp.sanger.ac.uk/pub/resources/software/alien_hunter/alien_hunter.tar.gz```
+Link to download alien_hunter to ASC account: 
+
+```wget ftp://ftp.sanger.ac.uk/pub/resources/software/alien_hunter/alien_hunter.tar.gz```
 
 The download is described in "install_alien_hunter.sh" script
 
