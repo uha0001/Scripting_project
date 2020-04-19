@@ -6,6 +6,6 @@ cp ~/Scripting_project/Genome_Files/*.fna .
 #usage alien_hunter file_name.fasta output_filename
 for filename in ./*.fna
 do
-alien_hunter $filename $filename_output_Filename -a
+alien_hunter $filename $filename_output.output
 
 done
