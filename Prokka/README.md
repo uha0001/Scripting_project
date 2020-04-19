@@ -16,5 +16,8 @@ Prokka
            
         bash run_prokka.sh
 
-    After completion of run, it creates sub-directory within the "Prokka" directory, that includes all output files 
+After completion of run, it creates sub-directory within the "Prokka" directory, that includes all output files 
 
+To get number of annotated gene and different category of annotation run get_annotation_output.sh
+
+       bash get_annotation_output.sh
