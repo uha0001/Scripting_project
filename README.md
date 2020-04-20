@@ -1,4 +1,4 @@
-### GROUP ID: 20A
+### GROUP #4
 #### Scripting project for BIOL7180 (spring 2020)
 #### Group Members: Md Jahangir Alam, Ulku Huma Altindag, Basu Kafle and Natalia Rivera Rincon
 ### Project Title: Analyze Bacterial Genomes Using State-of-the-Arts Toolsets.
