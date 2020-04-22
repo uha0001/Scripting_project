@@ -1,0 +1,8 @@
+Total number of genes
+3711
+Total number of hypothetical protein
+991
+Total number of genes with putative identification
+430
+Total number of genes with confirmed identification
+2290
