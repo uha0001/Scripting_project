@@ -64,6 +64,7 @@ For detail about installation and use of this tool, move into "Prokka" sub-direc
 Seperate directory created to run this program as Prokka will redirect outputs into new sub-directory for each annotated genome. To avoiding over-populating the main page with output directories, it is convinient to work in seperate directory
 
 ### Step 5: Biosynthetic Gene Cluster Identification.
+#### Warning: antiSMASH is a large program with lots of dependencies. Before installing it, make sure you have at least 10 GB space available in your machine, Otherwise skip this part in your pipeline.
 Using antiSMASH to identify biosynthetic gene clusters(BGCs) in all genomes.
 Link for more information: https://docs.antismash.secondarymetabolites.org/
 
