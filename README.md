@@ -1,8 +1,9 @@
-### GROUP #4
-#### Scripting project for BIOL7180 (spring 2020)
-#### Group Members: Md Jahangir Alam, Ulku Huma Altindag, Basu Kafle and Natalia Rivera Rincon
-### Project Title: Analyze Bacterial Genomes Using State-of-the-Arts Toolsets.
+##### GROUP #4
+##### Scripting project for BIOL7180 (spring 2020)
+##### Group Members: Md Jahangir Alam, Ulku Huma Altindag, Basu Kafle and Natalia Rivera Rincon
+### Title: Analyze Bacterial Genomes Using State-of-the-Arts Toolsets.
 
+##### Note: The main purpose of this project is to utilize the comp. Biol. skills we learned from Dr. Santos. At least one take home message would to learn how to install and run typical large bioinformatics tools in Alabama Supercomputer Cencer (ASC).
 
 ### INTRODUCTION
 Genomic datasets are considered goldmine for research in biological science. The enormous amount of publicly available data opens up great potential for research, collaboration and development of new toolsets. The purpose of our current project is to utilize current state-of-the-art toolsets to analyze publicly available bacterial genomes. Bacteria is ubiquitous, therefore analysis of bacterial genomes would give us key insights in many life science applications such as antibiotic discovery, natural product discovery, evolutionary strength, DNA modification etc. We want to download 10 Bacillus draft genome sequences from NCBI to look at some of the key features in its genomes to derive some useful information.
