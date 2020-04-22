@@ -105,15 +105,17 @@ Link to download alien_hunter to ASC account:
 The download is described in "install_alien_hunter.sh" script
 
 ### Instructions for usage:
-Before running the alien_hunter make sure to move into the Alien_hunter-1.7 folder along with the data files (w/ extension .fna. Make sure that files with the extention .fna are in the alien_hunter-1.7.
+Before running the alien_hunter make sure to move into the Alien_hunter-1.7 folder along with the data files (w/ extension .fna. **Make sure that files with the extention .fna are in the alien_hunter-1.7**.
 
-The process is for command for alien_hunter is described in the "horizontal_gene_transfer.sh" script. This script needs to be submitted in the queue system which will take approximately 3-4 hours for all 10 genome sequences. The program can be individually run for each of the raw sequences. Simply run a script with:
+The process is for command for alien_hunter is described in the "horizontal_gene_transfer.sh" script. This script needs to be submitted in the queue system which will take approximately 3-4 hours for **all 10 genome sequences**. The program can be individually run for each of the raw sequences. Simply run a script with:
 
 ```#!/bin/bash```
 
 ```alien_hunter sequence_file output_filename```
 
 Output will generate a histogram in the text format and raw scores in the output file w./.sco giving the proportions of the horizontally tranferred regions. you can find the related information in the output file from the queue system as well. 
+
+Example files can be  found in example_results folder.
 
 
 
