@@ -1,0 +1,866 @@
+[22:36:24] This is prokka 1.13
+[22:36:24] Written by Torsten Seemann <torsten.seemann@gmail.com>
+[22:36:24] Homepage is https://github.com/tseemann/prokka
+[22:36:24] Local time is Thu Apr 16 22:36:24 2020
+[22:36:24] You are basu
+[22:36:24] Operating system is linux
+[22:36:24] You have BioPerl 1.007002
+[22:36:24] System has 1 cores.
+[22:36:24] Option --cpu asked for 8 cores, but system only has 1
+[22:36:24] Will use maximum of 1 cores.
+[22:36:24] Annotating as >>> Bacteria <<<
+[22:36:24] Generating locus_tag from 'bacillus_australimaris-assembly.fna' contents.
+[22:36:24] Setting --locustag FHOFBOCF from MD5 f18fb8cfd94c079f190fc6b6c2cdf730
+[22:36:24] Creating new output folder: bacillus_australimaris-assembly.fna.prokka_annotation
+[22:36:24] Running: mkdir -p bacillus_australimaris\-assembly\.fna\.prokka_annotation
+[22:36:24] Using filename prefix: bacillus_australimaris-assembly.fna.XXX
+[22:36:24] Setting HMMER_NCPU=1
+[22:36:24] Writing log to: bacillus_australimaris-assembly.fna.prokka_annotation/bacillus_australimaris-assembly.fna.log
+[22:36:24] Command: /home/basu/anaconda3/bin/prokka bacillus_australimaris-assembly.fna --outdir bacillus_australimaris-assembly.fna.prokka_annotation --prefix bacillus_australimaris-assembly.fna
+[22:36:24] Appending to PATH: /home/basu/anaconda3/bin
+[22:36:24] Looking for 'aragorn' - found /home/basu/anaconda3/bin/aragorn
+[22:36:24] Determined aragorn version is 1.2
+[22:36:24] Looking for 'barrnap' - found /home/basu/anaconda3/bin/barrnap
+[22:36:24] Determined barrnap version is 0.9
+[22:36:24] Looking for 'blastp' - found /home/basu/anaconda3/bin/blastp
+[22:36:24] Determined blastp version is 2.9
+[22:36:24] Looking for 'cmpress' - found /home/basu/anaconda3/bin/cmpress
+[22:36:24] Determined cmpress version is 1.1
+[22:36:24] Looking for 'cmscan' - found /home/basu/anaconda3/bin/cmscan
+[22:36:24] Determined cmscan version is 1.1
+[22:36:24] Looking for 'egrep' - found /bin/egrep
+[22:36:24] Looking for 'find' - found /usr/bin/find
+[22:36:24] Looking for 'grep' - found /bin/grep
+[22:36:24] Looking for 'hmmpress' - found /home/basu/anaconda3/bin/hmmpress
+[22:36:24] Determined hmmpress version is 3.3
+[22:36:24] Looking for 'hmmscan' - found /home/basu/anaconda3/bin/hmmscan
+[22:36:24] Determined hmmscan version is 3.3
+[22:36:24] Looking for 'java' - found /home/basu/anaconda3/bin/java
+[22:36:24] Looking for 'less' - found /usr/bin/less
+[22:36:24] Looking for 'makeblastdb' - found /home/basu/anaconda3/bin/makeblastdb
+[22:36:24] Determined makeblastdb version is 2.9
+[22:36:24] Looking for 'minced' - found /home/basu/anaconda3/bin/minced
+[22:36:25] Determined minced version is 4.2
+[22:36:25] Looking for 'parallel' - found /home/basu/anaconda3/bin/parallel
+[22:36:25] Determined parallel version is 20160622
+[22:36:25] Looking for 'prodigal' - found /home/basu/anaconda3/bin/prodigal
+[22:36:25] Determined prodigal version is 2.6
+[22:36:25] Looking for 'prokka-genbank_to_fasta_db' - found /home/basu/anaconda3/bin/prokka-genbank_to_fasta_db
+[22:36:25] Looking for 'sed' - found /bin/sed
+[22:36:25] Looking for 'tbl2asn' - found /home/basu/anaconda3/bin/tbl2asn
+[22:36:25] Determined tbl2asn version is 25.7
+[22:36:25] Using genetic code table 11.
+[22:36:25] Loading and checking input file: bacillus_australimaris-assembly.fna
+[22:36:25] Wrote 31 contigs totalling 3649005 bp.
+[22:36:25] Predicting tRNAs and tmRNAs
+[22:36:25] Running: aragorn -l -gc11  -w bacillus_australimaris\-assembly\.fna\.prokka_annotation\/bacillus_australimaris\-assembly\.fna\.fna
+[22:36:26] 1 tRNA-Gln [361980,362052] 34 (ttg)
+[22:36:26] 2 tRNA-Arg c[618887,618962] 36 (tct)
+[22:36:26] 3 tRNA-Glu c[860817,860890] 35 (ttc)
+[22:36:26] 4 tRNA-Ser c[860899,860989] 35 (gct)
+[22:36:26] 5 tRNA-Asn c[860993,861067] 33 (gtt)
+[22:36:26] 6 tRNA-Ile c[861074,861150] 35 (gat)
+[22:36:26] 7 tRNA-Gly c[861168,861241] 33 (tcc)
+[22:36:26] 8 tRNA-His c[861253,861328] 34 (gtg)
+[22:36:26] 9 tRNA-Phe c[861355,861428] 34 (gaa)
+[22:36:26] 10 tRNA-Asp c[861447,861523] 35 (gtc)
+[22:36:26] 11 tRNA-Met c[861528,861604] 35 (cat)
+[22:36:26] 1 tRNA-Glu c[20056,20127] 34 (ttc)
+[22:36:26] 2 tRNA-Met c[20151,20228] 36 (cat)
+[22:36:26] 1 tRNA-Asp c[38495,38571] 35 (gtc)
+[22:36:26] 2 tRNA-Met c[38620,38696] 35 (cat)
+[22:36:26] 1 tRNA-Leu [73,156] 34 (gag)
+[22:36:26] 1 tRNA-Ala [8368,8440] 34 (ggc)
+[22:36:26] 2 tmRNA c[266964,267324] 87,134 GKTKSFNQNLALAA**
+[22:36:26] 3 tRNA-Arg c[342401,342479] 36 (ccg)
+[22:36:26] 1 tRNA-Thr [28,100] 34 (ggt)
+[22:36:26] 1 tRNA-Val [774,849] 34 (tac)
+[22:36:26] 2 tRNA-Thr [883,958] 34 (tgt)
+[22:36:26] 1 tRNA-Phe c[417077,417150] 34 (gaa)
+[22:36:26] 2 tRNA-Asp c[417178,417254] 35 (gtc)
+[22:36:26] 3 tRNA-Glu c[417335,417408] 35 (ttc)
+[22:36:26] 4 tRNA-Lys c[417414,417489] 34 (ttt)
+[22:36:26] 1 tRNA-Trp [36,109] 33 (cca)
+[22:36:26] 2 tRNA-His [139,214] 34 (gtg)
+[22:36:26] 3 tRNA-Gln [223,296] 34 (ttg)
+[22:36:26] 4 tRNA-Gly [303,377] 33 (gcc)
+[22:36:26] 5 tRNA-Cys [383,453] 33 (gca)
+[22:36:26] 6 tRNA-Leu [467,555] 35 (taa)
+[22:36:26] 7 tRNA-Leu [591,675] 36 (caa)
+[22:36:26] 8 tRNA-Gly [19867,19940] 33 (tcc)
+[22:36:26] 9 tRNA-Val [286987,287059] 34 (gac)
+[22:36:26] 10 tRNA-Val [293005,293078] 35 (gac)
+[22:36:26] 1 tRNA-Lys c[35,110] 34 (ttt)
+[22:36:26] 2 tRNA-Gln c[142,216] 33 (ttg)
+[22:36:26] 3 tRNA-Glu c[236,309] 35 (ttc)
+[22:36:26] 4 tRNA-Ser c[318,408] 35 (gct)
+[22:36:26] 5 tRNA-Asn c[413,487] 33 (gtt)
+[22:36:26] Found 41 tRNAs
+[22:36:26] Predicting Ribosomal RNAs
+[22:36:26] Running Barrnap with 1 threads
+[22:36:30] 1 NZ_LGYN01000017.1 51 23S ribosomal RNA (partial)
+[22:36:30] 2 NZ_LGYN01000018.1 4 16S ribosomal RNA (partial)
+[22:36:30] 3 NZ_LGYN01000021.1 2 23S ribosomal RNA (partial)
+[22:36:30] Found 3 rRNAs
+[22:36:30] Skipping ncRNA search, enable with --rfam if desired.
+[22:36:30] Total of 43 tRNA + rRNA features
+[22:36:30] Searching for CRISPR repeats
+[22:36:31] Found 0 CRISPRs
+[22:36:31] Predicting coding sequences
+[22:36:31] Contigs total 3649005 bp, so using single mode
+[22:36:31] Running: prodigal -i bacillus_australimaris\-assembly\.fna\.prokka_annotation\/bacillus_australimaris\-assembly\.fna\.fna -c -m -g 11 -p single -f sco -q
+[22:36:39] Found 3667 CDS
+[22:36:39] Connecting features back to sequences
+[22:36:39] Not using genus-specific database. Try --usegenus to enable it.
+[22:36:39] Annotating CDS, please be patient.
+[22:36:39] Will use 1 CPUs for similarity searching.
+[22:36:41] There are still 3667 unannotated CDS left (started with 3667)
+[22:36:41] Will use blast to search against /home/basu/anaconda3/bin/../db/kingdom/Bacteria/sprot with 1 CPUs
+[22:36:41] Running: cat bacillus_australimaris\-assembly\.fna\.prokka_annotation\/sprot\.faa | parallel --gnu --plain -j 1 --block 546598 --recstart '>' --pipe blastp -query - -db /home/basu/anaconda3/bin/../db/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > bacillus_australimaris\-assembly\.fna\.prokka_annotation\/sprot\.blast 2> /dev/null
+[22:41:45] Modify product: UPF0702 transmembrane protein YetF => hypothetical protein
+[22:41:45] Modify product: Uncharacterized ABC transporter ATP-binding protein Rv1273c => putative ABC transporter ATP-binding protein
+[22:41:45] Modify product: Uncharacterized ABC transporter ATP-binding protein TM_0288 => putative ABC transporter ATP-binding protein
+[22:41:45] Modify product: Probable chaperone CsaA => putative chaperone CsaA
+[22:41:45] Modify product: Probable metallo-hydrolase YflN => putative metallo-hydrolase YflN
+[22:41:45] Modify product: Uncharacterized sugar epimerase [22:28:20] Deleting unwanted file: bacillus_australimaris-assembly.fna.prokka_annotation/IS.faa
+[22:28:20] Deleting unwanted file: bacillus_australimaris-assembly.fna.prokka_annotation/IS.blast
+[22:28:22] There are still 3663 unannotated CDS left (started with 3667)
+[22:28:22] Will use blast to search against /mnt/beegfs/home/aubcls64/.conda/envs/prokka/db/kingdom/Bacteria/AMR with 8 CPUs
+[22:28:22] Running: cat bacillus_australimaris\-assembly\.fna\.prokka_annotation\/AMR\.faa | parallel --gnu --plain -j 8 --block 68284 --recstart '>' --pipe blastp -query - -db /mnt/beegfs/home/aubcls64/.conda/envs/prokka/db/kingdom/Bacteria/AMR -evalue 9.99999999999999e-301 -qcov_hsp_perc 90 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > bacillus_australimaris\-assembly\.fna\.prokka_annotation\/AMR\.blast 2> /dev/null
+[22:29:20] Deleting unwanted file: bacillus_australimaris-assembly.fna.prokka_annotation/AMR.faa
+[22:29:20] Deleting unwanted file: bacillus_australimaris-assembly.fna.prokka_annotation/AMR.blast
+[22:29:21] There are still 3663 unannotated CDS left (started with 3667)
+[22:29:21] Will use blast to search against /mnt/beegfs/home/aubcls64/.conda/envs/prokka/db/kingdom/Bacteria/sprot with 8 CPUs
+[22:29:21] Running: cat bacillus_australimaris\-assembly\.fna\.prokka_annotation\/sprot\.faa | parallel --gnu --plain -j 8 --block 68284 --recstart '>' --pipe blastp -query - -db /mnt/beegfs/home/aubcls64/.conda/envs/prokka/db/kingdom/Bacteria/sprot -evalue 1e-09 -qcov_hsp_perc 80 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > bacillus_australimaris\-assembly\.fna\.prokka_annotation\/sprot\.blast 2> /dev/null
+ ATP-dependent helicase DinG 
+[22:41:45] Modify product: Uncharacterized protein YpjD => putative protein YpjD
+[22:41:45] Modify product: UPF0302 protein BA_1542/GBAA_1542/BAS1430 => hypothetical protein
+[22:41:45] Modify product: 30S ribosomal protein S1 homolog => 30S ribosomal protein S1 
+[22:41:45] Modify product: Uncharacterized protein YpfA => putative protein YpfA
+[22:41:45] Modify product: Uncharacterized protein YpbG => putative protein YpbG
+[22:41:45] Modify product: Probable transporter SCO4007 => putative transporter
+[22:41:45] Modify product: Uncharacterized protein YpuA => putative protein YpuA
+[22:41:45] Modify product: UPF0039 protein Rv2851c => hypothetical protein
+[22:41:45] Modify product: Uncharacterized protein YqjY => putative protein YqjY
+[22:41:45] Modify product: Uncharacterized oxidoreductase SA2266 => putative oxidoreductase
+[22:41:45] Modify product: Putative aminotransferase MSMEG_6286/MSMEI_6121 => Putative aminotransferase/MSMEI_6121
+[22:41:45] Modify product: Probable glucose uptake protein GlcU => putative glucose uptake protein GlcU
+[22:41:46] Modify product: UPF0403 protein SA1345 => hypothetical protein
+[22:41:46] Modify product: Bifunctional protein FolD => Bifunctional protein FolD protein
+[22:41:46] Modify product: Uncharacterized protein Spy1535 => putative protein
+[22:41:46] Modify product: Uncharacterized NTE family protein Rv2565 => putative NTE family protein
+[22:41:46] Modify product: Sulfurtransferase Alvin_2599 => Sulfurtransferase
+[22:41:46] Modify product: Probable glycine dehydrogenase (decarboxylating) subunit 2 => putative glycine dehydrogenase (decarboxylating) subunit 2
+[22:41:46] Modify product: Probable glycine dehydrogenase (decarboxylating) subunit 1 => putative glycine dehydrogenase (decarboxylating) subunit 1
+[22:41:46] Modify product: Uncharacterized protein YqzG => putative protein YqzG
+[22:41:46] Modify product: Uncharacterized protein Rv2581c => putative protein
+[22:41:46] Modify product: Uncharacterized protein YqgQ => putative protein YqgQ
+[22:41:46] Modify product: Uncharacterized protein YqgN => putative protein YqgN
+[22:41:46] Modify product: Nucleotidase CA_C3379 => Nucleotidase
+[22:41:46] Modify product: Probable endonuclease 4 => putative endonuclease 4
+[22:41:46] Modify product: GTP cyclohydrolase 1 type 2 homolog => GTP cyclohydrolase 1 type 2 
+[22:41:46] Modify product: UPF0178 protein YaiI => hypothetical protein
+[22:41:46] Modify product: UPF0365 protein SA1402 => hypothetical protein
+[22:41:46] Modify product: Uncharacterized protein YqeY => putative protein YqeY
+[22:41:46] Modify product: Uncharacterized protein YqeN => putative protein YqeN
+[22:41:46] Modify product: RNA-binding protein HI_1333 => RNA-binding protein
+[22:41:46] Modify product: Uncharacterized protein YqeH => putative protein YqeH
+[22:41:46] Modify product: Acetyltransferase PA2578 => Acetyltransferase
+[22:41:46] Modify product: Probable beta-lactamase YbxI => putative beta-lactamase YbxI
+[22:41:46] Modify product: Probable amino-acid import ATP-binding protein YxeO => putative amino-acid import ATP-binding protein YxeO
+[22:41:46] Modify product: Probable amino-acid permease protein YxeN => putative amino-acid permease protein YxeN
+[22:41:46] Modify product: Uncharacterized methyltransferase YcgJ => putative methyltransferase YcgJ
+[22:41:46] Modify product: Uncharacterized methyltransferase YrrT => putative methyltransferase YrrT
+[22:41:46] Modify product: Uncharacterized protease YdcP => putative protease YdcP
+[22:41:46] Modify product: Uncharacterized protease YdcP => putative protease YdcP
+[22:41:46] Modify product: Uncharacterized acyl--CoA ligase YhfT => putative acyl--CoA ligase YhfT
+[22:41:46] Modify product: Probable biotin transporter BioY => putative biotin transporter BioY
+[22:41:46] Modify product: UPF0473 protein SP_0194 => hypothetical protein
+[22:41:46] Modify product: UPF0297 protein EF_1202 => hypothetical protein
+[22:41:46] Modify product: Putative transport protein Rv0205 => Putative transport protein
+[22:41:46] Modify product: Probable glutamine ABC transporter permease protein GlnM => putative glutamine ABC transporter permease protein GlnM
+[22:41:46] Modify product: Probable glutamine ABC transporter permease protein GlnP => putative glutamine ABC transporter permease protein GlnP
+[22:41:46] Modify product: Uncharacterized AAA domain-containing protein Rv2559c => putative AAA domain-containing protein
+[22:41:46] Modify product: UPF0702 transmembrane protein YetF => hypothetical protein
+[22:41:46] Modify product: Probable nicotinate-nucleotide pyrophosphorylase [carboxylating] => putative nicotinate-nucleotide pyrophosphorylase [carboxylating]
+[22:41:46] Modify product: UPF0758 protein YsxA => hypothetical protein
+[22:41:46] Modify product: Probable GTP-binding protein EngB => putative GTP-binding protein EngB
+[22:41:46] Modify product: Putative metallophosphoesterase MG207 homolog => Putative metallophosphoesterase MG207 
+[22:41:46] Modify product: Uncharacterized HTH-type transcriptional regulator YusO => putative HTH-type transcriptional regulator YusO
+[22:41:46] Modify product: Uncharacterized protein YslB => putative protein YslB
+[22:41:46] Modify product: Probable D,D-dipeptide-binding periplasmic protein DdpA => putative D,D-dipeptide-binding periplasmic protein DdpA
+[22:41:46] Modify product: Probable enoyl-CoA hydratase => putative enoyl-CoA hydratase
+[22:41:46] Modify product: UPF0716 protein FxsA => hypothetical protein
+[22:41:47] Modify product: UPF0173 metal-dependent hydrolase SA1529 => hypothetical protein
+[22:41:47] Modify product: Uncharacterized spore protein YtfJ => putative spore protein YtfJ
+[22:41:47] Modify product: Probable peptidoglycan glycosyltransferase FtsW => putative peptidoglycan glycosyltransferase FtsW
+[22:41:47] Modify product: Probable tRNA sulfurtransferase => putative tRNA sulfurtransferase
+[22:41:47] Modify product: Probable HTH-type transcriptional regulator YttP => putative HTH-type transcriptional regulator YttP
+[22:41:47] Modify product: Uncharacterized protein YqjZ => putative protein YqjZ
+[22:41:47] Modify product: UPF0478 protein SA1560 => hypothetical protein
+[22:41:47] Modify product: UPF0354 protein SA1564 => hypothetical protein
+[22:41:47] Modify product: Probable NAD-dependent malic enzyme 2 => putative NAD-dependent malic enzyme 2
+[22:41:47] Modify product: Probable quorum-quenching lactonase YtnP => putative quorum-quenching lactonase YtnP
+[22:41:47] Modify product: Uncharacterized peptidase Lmo0363 => putative peptidase
+[22:41:47] Modify product: Putative dipeptidase SACOL1801 => Putative dipeptidase
+[22:41:47] Modify product: Uncharacterized HTH-type transcriptional regulator YtzE => putative HTH-type transcriptional regulator YtzE
+[22:41:47] Modify product: Uncharacterized protein HI_0933 => putative protein
+[22:41:47] Modify product: UPF0167 protein CbrC => hypothetical protein
+[22:41:47] Modify product: Sulfurtransferase Alvin_2599 => Sulfurtransferase
+[22:41:47] Modify product: Uncharacterized protein YesV => putative protein YesV
+[22:41:47] Modify product: Uncharacterized multiple-sugar transport system permease YteP => putative multiple-sugar transport system permease YteP
+[22:41:47] Modify product: Uncharacterized HTH-type transcriptional regulator YtcD => putative HTH-type transcriptional regulator YtcD
+[22:41:47] Modify product: Uncharacterized oxidoreductase YtbE => putative oxidoreductase YtbE
+[22:41:47] Modify product: Uncharacterized membrane protein YttA => putative membrane protein YttA
+[22:41:47] Modify product: Probable ABC transporter permease YtrC => putative ABC transporter permease YtrC
+[22:41:47] Modify product: Uncharacterized protein YtmB => putative protein YtmB
+[22:41:47] Modify product: UPF0702 transmembrane protein YetF => hypothetical protein
+[22:41:47] Modify product: Uncharacterized protein YoeB => putative protein YoeB
+[22:41:47] Modify product: Resolvase homolog YneB => Resolvase YneB
+[22:41:47] Modify product: UPF0291 protein YnzC => hypothetical protein
+[22:41:47] Modify product: UPF0154 protein SA1178 => hypothetical protein
+[22:41:47] Modify product: Putative esterase aq_1494 => Putative esterase
+[22:41:47] Modify product: Uncharacterized protein SA1186 => putative protein
+[22:41:47] Modify product: Uncharacterized protein YccU => putative protein YccU
+[22:41:47] Modify product: Uncharacterized HTH-type transcriptional regulator YdjF => putative HTH-type transcriptional regulator YdjF
+[22:41:47] Modify product: Putative S-adenosyl-L-methionine-dependent methyltransferase Rv3787c => Putative S-adenosyl-L-methionine-dependent methyltransferase
+[22:41:47] Modify product: Uncharacterized PIN and TRAM-domain containing protein YacL => putative PIN and TRAM-domain containing protein YacL
+[22:41:47] Modify product: Uncharacterized protein YacP => putative protein YacP
+[22:41:47] Modify product: Ribosome-associated protein L7Ae-like => Ribosome-associated protein L7Ae-like protein
+[22:41:47] Modify product: Probable tRNA-dihydrouridine synthase => putative tRNA-dihydrouridine synthase
+[22:41:47] Modify product: Probable serine/threonine-protein kinase YabT => putative serine/threonine-protein kinase YabT
+[22:41:47] Modify product: Uncharacterized protein HP_1423 => putative protein
+[22:41:47] Modify product: Uncharacterized metal-dependent hydrolase YcfH => putative metal-dependent hydrolase YcfH
+[22:41:47] Modify product: UPF0213 protein SP_1535 => hypothetical protein
+[22:41:47] Modify product: Uncharacterized protein YaaQ => putative protein YaaQ
+[22:41:47] Modify product: TelA-like protein SA1238 => TelA-like protein
+[22:41:47] Modify product: Uncharacterized N-acetyltransferase YafP => putative N-acetyltransferase YafP
+[22:41:47] Modify product: Putative aldehyde dehydrogenase SAV2122 => Putative aldehyde dehydrogenase
+[22:41:47] Modify product: Uncharacterized protein YobA => putative protein YobA
+[22:41:47] Modify product: Probable propionyl-CoA carboxylase beta chain 5 => putative propionyl-CoA carboxylase beta chain 5
+[22:41:47] Modify product: Uncharacterized HTH-type transcriptional regulator YdjF => putative HTH-type transcriptional regulator YdjF
+[22:41:47] Modify product: Uncharacterized FAD-linked oxidoreductase Rv2280 => putative FAD-linked oxidoreductase
+[22:41:47] Modify product: Uncharacterized membrane protein Rv2637 => putative membrane protein
+[22:41:47] Modify product: UPF0413 protein YjbH => hypothetical protein
+[22:41:47] Modify product: Nitrilase blr3397 => Nitrilase
+[22:41:47] Modify product: Probable cation efflux system protein Rv2025c => putative cation efflux system protein
+[22:41:47] Modify product: Uncharacterized protein YdjM => putative protein YdjM
+[22:41:48] Modify product: Uncharacterized ABC transporter ATP-binding protein YheS => putative ABC transporter ATP-binding protein YheS
+[22:41:48] Modify product: Uncharacterized N-acetyltransferase YjcF => putative N-acetyltransferase YjcF
+[22:41:48] Modify product: Probable transport protein YifK => putative transport protein YifK
+[22:41:48] Modify product: Probable formaldehyde dehydrogenase AdhA => putative formaldehyde dehydrogenase AdhA
+[22:41:48] Modify product: Uncharacterized protein YjbR => putative protein YjbR
+[22:41:48] Modify product: Uncharacterized oxidoreductase Rv0945 => putative oxidoreductase
+[22:41:48] Modify product: Virulence protein STM3117 => Virulence protein
+[22:41:48] Modify product: Uncharacterized protein YyaP => putative protein YyaP
+[22:41:48] Modify product: Putative O-methyltransferase Rv1220c => Putative O-methyltransferase
+[22:41:48] Modify product: Probable cystine transporter YijE => putative cystine transporter YijE
+[22:41:48] Modify product: Uncharacterized membrane protein YuaF => putative membrane protein YuaF
+[22:41:48] Modify product: Uncharacterized protein YgaU => putative protein YgaU
+[22:41:48] Modify product: Uncharacterized protein YqbO => putative protein YqbO
+[22:41:48] Modify product: Uncharacterized protein YqbN => putative protein YqbN
+[22:41:48] Modify product: Uncharacterized protein YqbG => putative protein YqbG
+[22:41:48] Modify product: Uncharacterized protein YqbD => putative protein YqbD
+[22:41:48] Modify product: Putative transport protein Rv0205 => Putative transport protein
+[22:41:48] Modify product: UPF0047 protein Rv2556c => hypothetical protein
+[22:41:48] Modify product: UPF0053 protein Rv1842c => hypothetical protein
+[22:41:48] Modify product: Putative esterase HI_1161 => Putative esterase
+[22:41:48] Modify product: Uncharacterized protein YueI => putative protein YueI
+[22:41:48] Modify product: Probable spore germination protein GerPF => putative spore germination protein GerPF
+[22:41:48] Modify product: Probable spore germination protein GerPA => putative spore germination protein GerPA
+[22:41:48] Modify product: Putative transport protein Rv0205 => Putative transport protein
+[22:41:48] Modify product: Uncharacterized protein YuiC => putative protein YuiC
+[22:41:48] Modify product: NADH dehydrogenase-like protein SA0802 => NADH dehydrogenase-like protein
+[22:41:48] Modify product: Uncharacterized protein YpjQ => putative protein YpjQ
+[22:41:48] Modify product: UPF0331 protein YutE => hypothetical protein
+[22:41:48] Modify product: Uncharacterized protein YutD => putative protein YutD
+[22:41:48] Modify product: Probable siderophore transport system permease protein YfhA => putative siderophore transport system permease protein YfhA
+[22:41:48] Modify product: Probable siderophore transport system permease protein YfiZ => putative siderophore transport system permease protein YfiZ
+[22:41:48] Modify product: Probable siderophore-binding lipoprotein YfiY => putative siderophore-binding lipoprotein YfiY
+[22:41:48] Modify product: Uncharacterized HTH-type transcriptional regulator YfiR => putative HTH-type transcriptional regulator YfiR
+[22:41:48] Modify product: UPF0051 protein SA0778 => hypothetical protein
+[22:41:48] Modify product: UPF0051 protein SA0778 => hypothetical protein
+[22:41:48] Modify product: Probable acyl-CoA dehydrogenase => putative acyl-CoA dehydrogenase
+[22:41:48] Modify product: Probable 3-hydroxyacyl-CoA dehydrogenase => putative 3-hydroxyacyl-CoA dehydrogenase
+[22:41:48] Modify product: Probable siderophore transport system ATP-binding protein YusV => putative siderophore transport system ATP-binding protein YusV
+[22:41:48] Modify product: Uncharacterized protein YuzO => putative protein YuzO
+[22:41:48] Modify product: Probable HTH-type transcriptional repressor ExuR => putative HTH-type transcriptional repressor ExuR
+[22:41:48] Modify product: Probable siderophore transport system ATP-binding protein YusV => putative siderophore transport system ATP-binding protein YusV
+[22:41:48] Modify product: UPF0126 inner membrane protein YicG => hypothetical protein
+[22:41:48] Modify product: Probable transcriptional regulatory protein pdtaR => putative transcriptional regulatory protein pdtaR
+[22:41:48] Modify product: Probable diguanylate cyclase DgcT => putative diguanylate cyclase DgcT
+[22:41:48] Modify product: Probable protein-export membrane protein SecG => putative protein-export membrane protein SecG
+[22:41:48] Modify product: UPF0056 inner membrane protein MarC => hypothetical protein
+[22:41:48] Modify product: Uncharacterized N-acetyltransferase YvbK => putative N-acetyltransferase YvbK
+[22:41:48] Modify product: Uncharacterized protein YvfG => putative protein YvfG
+[22:41:48] Modify product: Uncharacterized sugar transferase EpsL => putative sugar transferase EpsL
+[22:41:48] Modify product: Uncharacterized membrane protein EpsK => putative membrane protein EpsK
+[22:41:48] Modify product: Probable capsular polysaccharide biosynthesis protein YwqC => putative capsular polysaccharide biosynthesis protein YwqC
+[22:41:48] Modify product: Probable siderophore-binding lipoprotein YfiY => putative siderophore-binding lipoprotein YfiY
+[22:41:48] Modify product: Uncharacterized ABC transporter ATP-binding protein YbiT => putative ABC transporter ATP-binding protein YbiT
+[22:41:48] Modify product: Uncharacterized protein Rv1708 => putative protein
+[22:41:49] Modify product: Uncharacterized glycosyltransferase sll0501 => putative glycosyltransferase
+[22:41:49] Modify product: Uncharacterized amino acid permease YvbW => putative amino acid permease YvbW
+[22:41:49] Modify product: Uncharacterized HTH-type transcriptional regulator YybR => putative HTH-type transcriptional regulator YybR
+[22:41:49] Modify product: Uncharacterized protein YvyC => putative protein YvyC
+[22:41:49] Modify product: Uncharacterized protein YviE => putative protein YviE
+[22:41:49] Modify product: Uncharacterized protein YvyG => putative protein YvyG
+[22:41:49] Modify product: Probable undecaprenyl-phosphate N-acetylglucosaminyl 1-phosphate transferase => putative undecaprenyl-phosphate N-acetylglucosaminyl 1-phosphate transferase
+[22:41:49] Modify product: Probable sugar-binding periplasmic protein => putative sugar-binding periplasmic protein
+[22:41:49] Modify product: Uncharacterized N-acetyltransferase YsnE => putative N-acetyltransferase YsnE
+[22:41:49] Modify product: Probable metabolite transport protein CsbC => putative metabolite transport protein CsbC
+[22:41:49] Modify product: PTS system EIIBC component SA0186 => PTS system EIIBC component
+[22:41:49] Modify product: Uncharacterized HTH-type transcriptional regulator YbbH => putative HTH-type transcriptional regulator YbbH
+[22:41:49] Modify product: Nucleoid-associated protein Cthe_2143 => Nucleoid-associated protein
+[22:41:49] Modify product: Probable antitoxin YezG => putative antitoxin YezG
+[22:41:49] Modify product: Probable antitoxin YezG => putative antitoxin YezG
+[22:41:49] Modify product: Uncharacterized protein YwpG => putative protein YwpG
+[22:41:49] Modify product: Uncharacterized HTH-type transcriptional regulator BA_1941/GBAA_1941/BAS1801 => putative HTH-type transcriptional regulator/GBAA_1941/BAS1801
+[22:41:49] Modify product: Uncharacterized MFS-type transporter YhhS => putative MFS-type transporter YhhS
+[22:41:49] Modify product: Multidrug efflux ATP-binding/permease protein BCG_0231 => Multidrug efflux ATP-binding/permease protein
+[22:41:49] Modify product: Uncharacterized MFS-type transporter YhjX => putative MFS-type transporter YhjX
+[22:41:49] Modify product: Uncharacterized protein BHWA1_00569 => putative protein
+[22:41:49] Modify product: Uncharacterized protein YwmB => putative protein YwmB
+[22:41:49] Modify product: UPF0340 protein YwlG => hypothetical protein
+[22:41:49] Modify product: Probable manganese efflux pump MntP => putative manganese efflux pump MntP
+[22:41:49] Modify product: Probable NAD-dependent malic enzyme 2 => putative NAD-dependent malic enzyme 2
+[22:41:49] Modify product: Probable fructose-bisphosphate aldolase => putative fructose-bisphosphate aldolase
+[22:41:49] Modify product: Probable 3-hydroxybutyryl-CoA dehydrogenase => putative 3-hydroxybutyryl-CoA dehydrogenase
+[22:41:49] Modify product: Probable iron-sulfur-binding oxidoreductase FadF => putative iron-sulfur-binding oxidoreductase FadF
+[22:41:49] Modify product: Putative multidrug export ATP-binding/permease protein SA1683 => Putative multidrug export ATP-binding/permease protein
+[22:41:49] Modify product: Probable cardiolipin synthase YwiE => putative cardiolipin synthase YwiE
+[22:41:49] Modify product: Probable murein peptide carboxypeptidase => putative murein peptide carboxypeptidase
+[22:41:49] Modify product: Uncharacterized beta-barrel protein YwiB => putative beta-barrel protein YwiB
+[22:41:49] Modify product: Uncharacterized N-acetyltransferase YtmI => putative N-acetyltransferase YtmI
+[22:41:49] Modify product: Probable amino-acid permease protein YxeN => putative amino-acid permease protein YxeN
+[22:41:49] Modify product: Putative heme-dependent peroxidase GK3416 => Putative heme-dependent peroxidase
+[22:41:49] Modify product: UPF0382 membrane protein YwdK => hypothetical protein
+[22:41:49] Modify product: Uncharacterized protein YwdI => putative protein YwdI
+[22:41:49] Modify product: Deacetylase Atu3266 => Deacetylase
+[22:41:49] Modify product: Probable 6-phospho-beta-glucosidase => putative 6-phospho-beta-glucosidase
+[22:41:49] Modify product: Probable licABCH operon regulator => putative licABCH operon regulator
+[22:41:49] Modify product: Uncharacterized protein YxlC => putative protein YxlC
+[22:41:49] Modify product: Probable ABC transporter ATP-binding protein HI_0664 => putative ABC transporter ATP-binding protein
+[22:41:49] Modify product: Probable siderophore transport system permease protein YfhA => putative siderophore transport system permease protein YfhA
+[22:41:49] Modify product: Probable heme-iron transport system permease protein IsdF => putative heme-iron transport system permease protein IsdF
+[22:41:49] Modify product: Riboflavin biosynthesis protein VVA0006 => Riboflavin biosynthesis protein
+[22:41:49] Modify product: Probable licABCH operon regulator => putative licABCH operon regulator
+[22:41:49] Modify product: Uncharacterized HTH-type transcriptional regulator YbbH => putative HTH-type transcriptional regulator YbbH
+[22:41:49] Modify product: Uncharacterized protein YwqG => putative protein YwqG
+[22:41:50] Modify product: Uncharacterized protein YhaZ => putative protein YhaZ
+[22:41:50] Modify product: Uncharacterized HTH-type transcriptional regulator YbbH => putative HTH-type transcriptional regulator YbbH
+[22:41:50] Modify product: Uncharacterized ABC transporter ATP-binding protein YxlF => putative ABC transporter ATP-binding protein YxlF
+[22:41:50] Modify product: Uncharacterized aldehyde dehydrogenase AldY => putative aldehyde dehydrogenase AldY
+[22:41:50] Modify product: Probable UbiX-like flavin prenyltransferase => putative UbiX-like flavin prenyltransferase
+[22:41:50] Modify product: Uncharacterized HTH-type transcriptional regulator YydK => putative HTH-type transcriptional regulator YydK
+[22:41:50] Modify product: Uncharacterized isomerase YddE => putative isomerase YddE
+[22:41:50] Modify product: Uncharacterized ABC transporter ATP-binding protein YxlF => putative ABC transporter ATP-binding protein YxlF
+[22:41:50] Modify product: UPF0397 protein SP_0482 => hypothetical protein
+[22:41:50] Modify product: Uncharacterized ABC transporter ATP-binding protein YxlF => putative ABC transporter ATP-binding protein YxlF
+[22:41:50] Modify product: Uncharacterized N-acetyltransferase YycN => putative N-acetyltransferase YycN
+[22:41:50] Modify product: Putative peroxiredoxin Rv2521 => Putative peroxiredoxin
+[22:41:50] Modify product: Uncharacterized protein YycE => putative protein YycE
+[22:41:50] Modify product: Uncharacterized protein YbbA => putative protein YbbA
+[22:41:50] Modify product: Uncharacterized protein YycC => putative protein YycC
+[22:41:50] Modify product: Uncharacterized transporter YycB => putative transporter YycB
+[22:41:50] Modify product: Uncharacterized protein YmzC => putative protein YmzC
+[22:41:50] Modify product: UPF0714 protein YmaC => hypothetical protein
+[22:41:50] Modify product: UPF0714 protein YmaC => hypothetical protein
+[22:41:50] Modify product: Uncharacterized protein YuaB => putative protein YuaB
+[22:41:50] Modify product: Uncharacterized protein YmcA => putative protein YmcA
+[22:41:50] Modify product: Uncharacterized protein YflH => putative protein YflH
+[22:41:50] Modify product: Uncharacterized zinc protease Rv2782c => putative zinc protease
+[22:41:50] Modify product: Probable ribosomal protein YlxQ => putative ribosomal protein YlxQ
+[22:41:50] Modify product: Probable ATP synthase YscN => putative ATP synthase YscN
+[22:41:50] Modify product: UPF0109 protein Rv2908c => hypothetical protein
+[22:41:50] Modify product: UPF0122 protein SAV1236 => hypothetical protein
+[22:41:50] Modify product: Uncharacterized protein SA1069 => putative protein
+[22:41:50] Modify product: Uncharacterized protein Spy1614 => putative protein
+[22:41:50] Modify product: Probable dual-specificity RNA methyltransferase RlmN => putative dual-specificity RNA methyltransferase RlmN
+[22:41:50] Modify product: UPF0701 protein HI_0467 => hypothetical protein
+[22:41:50] Modify product: Uncharacterized protein YloA => putative protein YloA
+[22:41:50] Modify product: Probable adenylyl-sulfate kinase => putative adenylyl-sulfate kinase
+[22:41:50] Modify product: Uncharacterized ABC transporter ATP-binding protein YlmA => putative ABC transporter ATP-binding protein YlmA
+[22:41:50] Modify product: UPF0749 protein YlxW => hypothetical protein
+[22:41:50] Modify product: Probable peptidoglycan glycosyltransferase FtsW => putative peptidoglycan glycosyltransferase FtsW
+[22:41:50] Modify product: Probable 2-dehydropantoate 2-reductase => putative 2-dehydropantoate 2-reductase
+[22:41:50] Modify product: Uncharacterized N-acetyltransferase YlbP => putative N-acetyltransferase YlbP
+[22:41:50] Modify product: Uncharacterized protein Rv2926c => putative protein
+[22:41:50] Modify product: UPF0348 protein SP_1742 => hypothetical protein
+[22:41:50] Modify product: Uncharacterized protein YlbL => putative protein YlbL
+[22:41:50] Modify product: Uncharacterized NTE family protein Rv1063c => putative NTE family protein
+[22:41:50] Modify product: Probable peptidoglycan glycosyltransferase FtsW => putative peptidoglycan glycosyltransferase FtsW
+[22:41:50] Modify product: UPF0358 protein YlaN => hypothetical protein
+[22:41:50] Modify product: UPF0637 protein YktB => hypothetical protein
+[22:41:50] Modify product: UPF0223 protein BH2638 => hypothetical protein
+[22:41:50] Modify product: UPF0356 protein M6_Spy1605 => hypothetical protein
+[22:41:51] Modify product: Uncharacterized ABC transporter ATP-binding protein YbiT => putative ABC transporter ATP-binding protein YbiT
+[22:41:51] Modify product: Uncharacterized ABC transporter permease YknZ => putative ABC transporter permease YknZ
+[22:41:51] Modify product: Uncharacterized ABC transporter ATP-binding protein YknY => putative ABC transporter ATP-binding protein YknY
+[22:41:51] Modify product: Probable molybdenum cofactor guanylyltransferase => putative molybdenum cofactor guanylyltransferase
+[22:41:51] Modify product: Uncharacterized MscS family protein YkuT => putative MscS family protein YkuT
+[22:41:51] Modify product: Uncharacterized protein YkzF => putative protein YkzF
+[22:41:51] Modify product: Uncharacterized protein YkuJ => putative protein YkuJ
+[22:41:51] Modify product: Probable manganese catalase => putative manganese catalase
+[22:41:51] Modify product: Uncharacterized EAL-domain containing protein YkuI => putative EAL-domain containing protein YkuI
+[22:41:51] Modify product: Probable 2,4-dienoyl-CoA reductase => putative 2,4-dienoyl-CoA reductase
+[22:41:51] Modify product: Uncharacterized inner membrane transporter YicL => putative inner membrane transporter YicL
+[22:41:51] Modify product: Uncharacterized peptidase SA1530 => putative peptidase
+[22:41:51] Modify product: Uncharacterized protein YkvT => putative protein YkvT
+[22:41:51] Modify product: UPF0053 inner membrane protein YoaE => hypothetical protein
+[22:41:51] Modify product: Uncharacterized signaling protein PA1727 => putative signaling protein
+[22:41:51] Modify product: Uncharacterized protein YkoJ => putative protein YkoJ
+[22:41:51] Modify product: Uncharacterized protein YkoJ => putative protein YkoJ
+[22:41:51] Modify product: Uncharacterized acyl-CoA thioester hydrolase HI_0827 => putative acyl-CoA thioester hydrolase
+[22:41:51] Modify product: Probable murein peptide carboxypeptidase => putative murein peptide carboxypeptidase
+[22:41:51] Modify product: Probable 2,4-dienoyl-CoA reductase => putative 2,4-dienoyl-CoA reductase
+[22:41:51] Modify product: UPF0714 protein YmaC => hypothetical protein
+[22:41:51] Modify product: Stress response UPF0229 protein YhbH => hypothetical protein
+[22:41:51] Modify product: Probable multidrug resistance protein EmrK => putative multidrug resistance protein EmrK
+[22:41:51] Modify product: Probable diguanylate cyclase DgcQ => putative diguanylate cyclase DgcQ
+[22:41:51] Modify product: Probable peptidoglycan endopeptidase LytE => putative peptidoglycan endopeptidase LytE
+[22:41:51] Modify product: Uncharacterized amino acid permease YhdG => putative amino acid permease YhdG
+[22:41:51] Modify product: Probable anti-sigma-M factor YhdK => putative anti-sigma-M factor YhdK
+[22:41:51] Modify product: Probable anti-sigma-M factor YhdL => putative anti-sigma-M factor YhdL
+[22:41:51] Modify product: UPF0053 protein Rv1842c => hypothetical protein
+[22:41:51] Modify product: UPF0053 protein Rv1842c => hypothetical protein
+[22:41:51] Modify product: Probable multidrug resistance ABC transporter ATP-binding/permease protein YheI => putative multidrug resistance ABC transporter ATP-binding/permease protein YheI
+[22:41:51] Modify product: Probable multidrug resistance ABC transporter ATP-binding/permease protein YheH => putative multidrug resistance ABC transporter ATP-binding/permease protein YheH
+[22:41:51] Modify product: UPF0754 membrane protein SA1664 => hypothetical protein
+[22:41:51] Modify product: UPF0342 protein YheA => hypothetical protein
+[22:41:51] Modify product: Uncharacterized metallophosphoesterase YhaO => putative metallophosphoesterase YhaO
+[22:41:51] Modify product: Uncharacterized protein YhaN => putative protein YhaN
+[22:41:51] Modify product: Uncharacterized protein YhaI => putative protein YhaI
+[22:41:51] Modify product: Probable tryptophan transport protein => putative tryptophan transport protein
+[22:41:51] Modify product: Uncharacterized protein Rv1339 => putative protein
+[22:41:51] Modify product: Probable spore germination protein GerPF => putative spore germination protein GerPF
+[22:41:51] Modify product: Probable spore germination protein GerPE => putative spore germination protein GerPE
+[22:41:51] Modify product: Probable spore germination protein GerPD => putative spore germination protein GerPD
+[22:41:51] Modify product: Probable spore germination protein GerPC => putative spore germination protein GerPC
+[22:41:51] Modify product: Probable spore germination protein GerPB => putative spore germination protein GerPB
+[22:41:51] Modify product: Probable spore germination protein GerPA => putative spore germination protein GerPA
+[22:41:51] Modify product: Uncharacterized protein YisK => putative protein YisK
+[22:41:51] Modify product: Probable FMN/FAD exporter YeeO => putative FMN/FAD exporter YeeO
+[22:41:51] Modify product: UPF0234 protein Rv0566c => hypothetical protein
+[22:41:51] Modify product: Fatty acid-binding protein TM_1468 => Fatty acid-binding protein
+[22:41:51] Modify product: Purine-binding protein BAB2_0673 => Purine-binding protein
+[22:41:51] Modify product: UPF0053 inner membrane protein YoaE => hypothetical protein
+[22:41:51] Modify product: Probable cardiolipin synthase YwiE => putative cardiolipin synthase YwiE
+[22:41:51] Modify product: UPF0413 protein YjbH => hypothetical protein
+[22:41:52] Modify product: Uncharacterized N-acetyltransferase YjcF => putative N-acetyltransferase YjcF
+[22:41:52] Modify product: Uncharacterized protein YbbA => putative protein YbbA
+[22:41:52] Modify product: Probable acrylyl-CoA reductase AcuI => putative acrylyl-CoA reductase AcuI
+[22:41:52] Modify product: Uncharacterized transporter YycB => putative transporter YycB
+[22:41:52] Modify product: Uncharacterized transporter YycB => putative transporter YycB
+[22:41:52] Modify product: Uncharacterized ABC transporter ATP-binding protein YxlF => putative ABC transporter ATP-binding protein YxlF
+[22:41:52] Modify product: Putative hydro-lyase Atu3911 => Putative hydro-lyase
+[22:41:52] Modify product: UPF0271 protein YbgL => hypothetical protein
+[22:41:52] Modify product: Uncharacterized protein YcnI => putative protein YcnI
+[22:41:52] Modify product: Uncharacterized amino acid permease YhdG => putative amino acid permease YhdG
+[22:41:52] Modify product: Probable multidrug resistance protein EmrY => putative multidrug resistance protein EmrY
+[22:41:52] Modify product: Uncharacterized hydrolase YxeP => putative hydrolase YxeP
+[22:41:52] Modify product: Probable amino-acid import ATP-binding protein YxeO => putative amino-acid import ATP-binding protein YxeO
+[22:41:52] Modify product: Probable amino-acid permease protein YxeN => putative amino-acid permease protein YxeN
+[22:41:52] Modify product: Probable amino-acid-binding protein YxeM => putative amino-acid-binding protein YxeM
+[22:41:52] Modify product: Uncharacterized N-acetyltransferase YtmI => putative N-acetyltransferase YtmI
+[22:41:52] Modify product: Uncharacterized oxidoreductase UxuB => putative oxidoreductase UxuB
+[22:41:52] Modify product: Uncharacterized symporter YjmB => putative symporter YjmB
+[22:41:52] Modify product: Sulfurtransferase Alvin_2599 => Sulfurtransferase
+[22:41:52] Modify product: UPF0176 protein SP_0095 => hypothetical protein
+[22:41:52] Modify product: Probable licABCH operon regulator => putative licABCH operon regulator
+[22:41:52] Modify product: Uncharacterized protein YlqB => putative protein YlqB
+[22:41:52] Modify product: Uncharacterized HTH-type transcriptional regulator YxaF => putative HTH-type transcriptional regulator YxaF
+[22:41:52] Modify product: Probable zinc-binding alcohol dehydrogenase Rv1895 => putative zinc-binding alcohol dehydrogenase
+[22:41:52] Modify product: Uncharacterized HTH-type transcriptional regulator YusO => putative HTH-type transcriptional regulator YusO
+[22:41:52] Modify product: Uncharacterized amino acid permease YhdG => putative amino acid permease YhdG
+[22:41:52] Modify product: Uncharacterized lipoprotein YcdA => putative lipoprotein YcdA
+[22:41:52] Modify product: Uncharacterized lipoprotein YcdA => putative lipoprotein YcdA
+[22:41:52] Modify product: UPF0053 inner membrane protein YgdQ => hypothetical protein
+[22:41:52] Modify product: TelA-like protein SA1238 => TelA-like protein
+[22:41:52] Modify product: Uncharacterized hydrolase YxeP => putative hydrolase YxeP
+[22:41:52] Modify product: Probable glucarate transporter => putative glucarate transporter
+[22:41:52] Modify product: Uncharacterized methyltransferase YcgJ => putative methyltransferase YcgJ
+[22:41:52] Modify product: Probable ABC transporter extracellular-binding protein YckB => putative ABC transporter extracellular-binding protein YckB
+[22:41:52] Modify product: Uncharacterized protein YjgB => putative protein YjgB
+[22:41:52] Modify product: UPF0435 protein YfkK => hypothetical protein
+[22:41:52] Modify product: Uncharacterized MFS-type transporter YcaD => putative MFS-type transporter YcaD
+[22:41:52] Modify product: Uncharacterized protein YfkD => putative protein YfkD
+[22:41:52] Modify product: Probable transcriptional regulatory protein SA0624 => putative transcriptional regulatory protein
+[22:41:52] Modify product: Uncharacterized MscS family protein YfkC => putative MscS family protein YfkC
+[22:41:52] Modify product: Uncharacterized protein YhaZ => putative protein YhaZ
+[22:41:52] Modify product: Putative trans-acting regulator SP_1800 => Putative trans-acting regulator
+[22:41:52] Modify product: Uncharacterized HTH-type transcriptional regulator YvdT => putative HTH-type transcriptional regulator YvdT
+[22:41:52] Modify product: Probable rhamnogalacturonan acetylesterase YesY => putative rhamnogalacturonan acetylesterase YesY
+[22:41:52] Modify product: Uncharacterized ABC transporter ATP-binding protein TM_0288 => putative ABC transporter ATP-binding protein
+[22:41:52] Modify product: UPF0060 membrane protein YnfA => hypothetical protein
+[22:41:52] Modify product: Zinc-type alcohol dehydrogenase-like protein SA1988 => Zinc-type alcohol dehydrogenase-like protein
+[22:41:52] Modify product: Uncharacterized HTH-type transcriptional regulator YusO => putative HTH-type transcriptional regulator YusO
+[22:41:52] Modify product: Epimerase family protein SA0724 => Epimerase family protein
+[22:41:52] Modify product: Uncharacterized protein YfhH => putative protein YfhH
+[22:41:53] Modify product: Uncharacterized protein YvrJ => putative protein YvrJ
+[22:41:53] Modify product: Uncharacterized protein YfhP => putative protein YfhP
+[22:41:53] Modify product: Uncharacterized protein YfhS => putative protein YfhS
+[22:41:53] Modify product: UPF0374 protein SP_1903 => hypothetical protein
+[22:41:53] Modify product: Putative multidrug export ATP-binding/permease protein SA1683 => Putative multidrug export ATP-binding/permease protein
+[22:41:53] Modify product: Uncharacterized HTH-type transcriptional regulator SACOL2360 => putative HTH-type transcriptional regulator
+[22:41:53] Modify product: UPF0316 protein SA1727 => hypothetical protein
+[22:41:53] Modify product: Probable succinyl-CoA:3-ketoacid coenzyme A transferase subunit B => putative succinyl-CoA:3-ketoacid coenzyme A transferase subunit B
+[22:41:53] Modify product: Probable tRNA-dihydrouridine synthase => putative tRNA-dihydrouridine synthase
+[22:41:53] Modify product: Putative HTH-type transcriptional regulator Rv1287 => Putative HTH-type transcriptional regulator
+[22:41:53] Modify product: Probable 6-phospho-beta-glucosidase => putative 6-phospho-beta-glucosidase
+[22:41:53] Modify product: Uncharacterized amino acid permease YhdG => putative amino acid permease YhdG
+[22:41:53] Modify product: Uncharacterized ABC transporter ATP-binding protein YbiT => putative ABC transporter ATP-binding protein YbiT
+[22:41:53] Modify product: Probable ATP-dependent RNA helicase YfmL => putative ATP-dependent RNA helicase YfmL
+[22:41:53] Modify product: Uncharacterized protein YfmB => putative protein YfmB
+[22:41:53] Modify product: Riboflavin biosynthesis protein VVA0006 => Riboflavin biosynthesis protein
+[22:41:53] Cleaned 404 /product names
+[22:41:53] Deleting unwanted file: bacillus_australimaris-assembly.fna.prokka_annotation/sprot.faa
+[22:41:53] Deleting unwanted file: bacillus_australimaris-assembly.fna.prokka_annotation/sprot.blast
+[22:41:53] There are still 989 unannotated CDS left (started with 3667)
+[22:41:53] Will use hmmer3 to search against /home/basu/anaconda3/bin/../db/hmm/HAMAP.hmm with 1 CPUs
+[22:41:53] Running: cat bacillus_australimaris\-assembly\.fna\.prokka_annotation\/HAMAP\.hmm\.faa | parallel --gnu --plain -j 1 --block 98175 --recstart '>' --pipe hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 /home/basu/anaconda3/bin/../db/hmm/HAMAP.hmm /dev/stdin > bacillus_australimaris\-assembly\.fna\.prokka_annotation\/HAMAP\.hmm\.hmmer3 2> /dev/null
+[22:42:44] Modify product: Uncharacterized Nudix hydrolase NudL => putative Nudix hydrolase NudL
+[22:42:44] Modify product: Protein SprT-like => Protein SprT-like protein
+[22:42:44] Cleaned 2 /product names
+[22:42:44] Deleting unwanted file: bacillus_australimaris-assembly.fna.prokka_annotation/HAMAP.hmm.faa
+[22:42:44] Deleting unwanted file: bacillus_australimaris-assembly.fna.prokka_annotation/HAMAP.hmm.hmmer3
+[22:42:44] Labelling remaining 929 proteins as 'hypothetical protein'
+[22:42:44] Possible /pseudo 'putative ABC transporter ATP-binding protein' at NZ_LGYN01000001.1 position 15931
+[22:42:44] Possible /pseudo 'putative protease YdcP' at NZ_LGYN01000001.1 position 498720
+[22:42:44] Possible /pseudo 'Branched-chain amino acid transport system 2 carrier protein' at NZ_LGYN01000001.1 position 746686
+[22:42:44] Possible /pseudo 'PTS system fructose-specific EIIABC component' at NZ_LGYN01000005.1 position 5178
+[22:42:44] Possible /pseudo 'Protease synthase and sporulation protein PAI 2' at NZ_LGYN01000007.1 position 17675
+[22:42:44] Possible /pseudo 'Methyl-accepting chemotaxis protein McpA' at NZ_LGYN01000012.1 position 48079
+[22:42:44] Possible /pseudo 'Methyl-accepting chemotaxis protein McpB' at NZ_LGYN01000012.1 position 52350
+[22:42:44] Possible /pseudo 'Long-chain-alcohol dehydrogenase 2' at NZ_LGYN01000012.1 position 64307
+[22:42:44] Possible /pseudo 'HTH-type transcriptional repressor RghR' at NZ_LGYN01000012.1 position 273003
+[22:42:44] Possible /pseudo 'Chromate transport protein' at NZ_LGYN01000023.1 position 5911
+[22:42:44] Possible /pseudo 'Flagellar basal-body rod protein FlgG' at NZ_LGYN01000023.1 position 19088
+[22:42:44] Possible /pseudo 'Acyl-CoA dehydrogenase' at NZ_LGYN01000023.1 position 83468
+[22:42:44] Possible /pseudo 'Iron-regulated surface determinant protein C' at NZ_LGYN01000023.1 position 238739
+[22:42:44] Possible /pseudo 'Iron-regulated surface determinant protein C' at NZ_LGYN01000023.1 position 239416
+[22:42:44] Possible /pseudo 'putative protein' at NZ_LGYN01000026.1 position 167999
+[22:42:44] Possible /pseudo 'putative protein YkoJ' at NZ_LGYN01000026.1 position 417740
+[22:42:44] Possible /pseudo 'Putative fluoride ion transporter CrcB' at NZ_LGYN01000027.1 position 80017
+[22:42:44] Possible /pseudo 'General stress protein 16U' at NZ_LGYN01000029.1 position 78088
+[22:42:44] Found 2123 unique /gene codes.
+[22:42:44] Fixed 2 duplicate /gene - feuB_1 feuB_2
+[22:42:44] Fixed 2 duplicate /gene - guaB_1 guaB_2
+[22:42:44] Fixed 2 duplicate /gene - betI_1 betI_2
+[22:42:44] Fixed 5 duplicate /gene - xylB_1 xylB_2 xylB_3 xylB_4 xylB_5
+[22:42:44] Fixed 2 duplicate /gene - ywnA_1 ywnA_2
+[22:42:44] Fixed 2 duplicate /gene - artQ_1 artQ_2
+[22:42:44] Fixed 2 duplicate /gene - aroE_1 aroE_2
+[22:42:44] Fixed 4 duplicate /gene - pdhC_1 pdhC_2 pdhC_3 pdhC_4
+[22:42:44] Fixed 2 duplicate /gene - yecD_1 yecD_2
+[22:42:44] Fixed 2 duplicate /gene - ypdA_1 ypdA_2
+[22:42:44] Fixed 2 duplicate /gene - ycgJ_1 ycgJ_2
+[22:42:44] Fixed 2 duplicate /gene - metP_1 metP_2
+[22:42:44] Fixed 2 duplicate /gene - lipC_1 lipC_2
+[22:42:44] Fixed 2 duplicate /gene - glnH_1 glnH_2
+[22:42:44] Fixed 3 duplicate /gene - yocK_1 yocK_2 yocK_3
+[22:42:44] Fixed 3 duplicate /gene - sinR_1 sinR_2 sinR_3
+[22:42:44] Fixed 2 duplicate /gene - licC_1 licC_2
+[22:42:44] Fixed 3 duplicate /gene - yodB_1 yodB_2 yodB_3
+[22:42:44] Fixed 2 duplicate /gene - kipR_1 kipR_2
+[22:42:44] Fixed 3 duplicate /gene - srrA_1 srrA_2 srrA_3
+[22:42:44] Fixed 2 duplicate /gene - iucD_1 iucD_2
+[22:42:44] Fixed 6 duplicate /gene - fabG_1 fabG_2 fabG_3 fabG_4 fabG_5 fabG_6
+[22:42:44] Fixed 2 duplicate /gene - ribD_1 ribD_2
+[22:42:44] Fixed 3 duplicate /gene - btr_1 btr_2 btr_3
+[22:42:44] Fixed 5 duplicate /gene - bglF_1 bglF_2 bglF_3 bglF_4 bglF_5
+[22:42:44] Fixed 2 duplicate /gene - polC_1 polC_2
+[22:42:44] Fixed 2 duplicate /gene - pepF1_1 pepF1_2
+[22:42:44] Fixed 2 duplicate /gene - emrB_1 emrB_2
+[22:42:44] Fixed 2 duplicate /gene - yxeO_1 yxeO_2
+[22:42:44] Fixed 2 duplicate /gene - cccB_1 cccB_2
+[22:42:44] Fixed 2 duplicate /gene - lacC_1 lacC_2
+[22:42:44] Fixed 2 duplicate /gene - rghR_1 rghR_2
+[22:42:44] Fixed 2 duplicate /gene - yhaZ_1 yhaZ_2
+[22:42:44] Fixed 2 duplicate /gene - bioB_1 bioB_2
+[22:42:44] Fixed 2 duplicate /gene - lytA_1 lytA_2
+[22:42:44] Fixed 4 duplicate /gene - tetA_1 tetA_2 tetA_3 tetA_4
+[22:42:44] Fixed 2 duplicate /gene - liaS_1 liaS_2
+[22:42:44] Fixed 2 duplicate /gene - ltaS2_1 ltaS2_2
+[22:42:44] Fixed 2 duplicate /gene - ydgH_1 ydgH_2
+[22:42:44] Fixed 3 duplicate /gene - gltA_1 gltA_2 gltA_3
+[22:42:44] Fixed 2 duplicate /gene - yjcF_1 yjcF_2
+[22:42:44] Fixed 2 duplicate /gene - rihB_1 rihB_2
+[22:42:44] Fixed 3 duplicate /gene - yycB_1 yycB_2 yycB_3
+[22:42:44] Fixed 2 duplicate /gene - bm3R1_1 bm3R1_2
+[22:42:44] Fixed 2 duplicate /gene - ydcP_1 ydcP_2
+[22:42:44] Fixed 2 duplicate /gene - yvgN_1 yvgN_2
+[22:42:44] Fixed 2 duplicate /gene - yezG_1 yezG_2
+[22:42:44] Fixed 5 duplicate /gene - luxA_1 luxA_2 luxA_3 luxA_4 luxA_5
+[22:42:44] Fixed 2 duplicate /gene - ecfT_1 ecfT_2
+[22:42:44] Fixed 4 duplicate /gene - gsiD_1 gsiD_2 gsiD_3 gsiD_4
+[22:42:44] Fixed 2 duplicate /gene - yeeF_1 yeeF_2
+[22:42:44] Fixed 2 duplicate /gene - gatB_1 gatB_2
+[22:42:44] Fixed 2 duplicate /gene - pdaA_1 pdaA_2
+[22:42:44] Fixed 2 duplicate /gene - bfmBAB_1 bfmBAB_2
+[22:42:44] Fixed 3 duplicate /gene - ybiT_1 ybiT_2 ybiT_3
+[22:42:44] Fixed 2 duplicate /gene - cwlO_1 cwlO_2
+[22:42:44] Fixed 2 duplicate /gene - feuC_1 feuC_2
+[22:42:44] Fixed 2 duplicate /gene - ldh_1 ldh_2
+[22:42:44] Fixed 2 duplicate /gene - mtlA_1 mtlA_2
+[22:42:44] Fixed 2 duplicate /gene - queE_1 queE_2
+[22:42:44] Fixed 2 duplicate /gene - yocH_1 yocH_2
+[22:42:44] Fixed 2 duplicate /gene - ilvB_1 ilvB_2
+[22:42:44] Fixed 3 duplicate /gene - phoR_1 phoR_2 phoR_3
+[22:42:44] Fixed 3 duplicate /gene - trxB_1 trxB_2 trxB_3
+[22:42:44] Fixed 7 duplicate /gene - cynR_1 cynR_2 cynR_3 cynR_4 cynR_5 cynR_6 cynR_7
+[22:42:44] Fixed 2 duplicate /gene - ykfA_1 ykfA_2
+[22:42:44] Fixed 3 duplicate /gene - bacC_1 bacC_2 bacC_3
+[22:42:44] Fixed 2 duplicate /gene - yumC_1 yumC_2
+[22:42:44] Fixed 2 duplicate /gene - yfkN_1 yfkN_2
+[22:42:44] Fixed 2 duplicate /gene - ykuD_1 ykuD_2
+[22:42:44] Fixed 2 duplicate /gene - cheW_1 cheW_2
+[22:42:44] Fixed 2 duplicate /gene - murJ_1 murJ_2
+[22:42:44] Fixed 2 duplicate /gene - nucB_1 nucB_2
+[22:42:44] Fixed 2 duplicate /gene - adh2_1 adh2_2
+[22:42:44] Fixed 3 duplicate /gene - speG_1 speG_2 speG_3
+[22:42:44] Fixed 2 duplicate /gene - accC_1 accC_2
+[22:42:44] Fixed 2 duplicate /gene - ssuC_1 ssuC_2
+[22:42:44] Fixed 3 duplicate /gene - menH_1 menH_2 menH_3
+[22:42:44] Fixed 2 duplicate /gene - bioY_1 bioY_2
+[22:42:44] Fixed 2 duplicate /gene - yvgO_1 yvgO_2
+[22:42:44] Fixed 2 duplicate /gene - yesS_1 yesS_2
+[22:42:44] Fixed 2 duplicate /gene - pbpH_1 pbpH_2
+[22:42:44] Fixed 2 duplicate /gene - yusV_1 yusV_2
+[22:42:44] Fixed 2 duplicate /gene - khtT_1 khtT_2
+[22:42:44] Fixed 2 duplicate /gene - clpP_1 clpP_2
+[22:42:44] Fixed 2 duplicate /gene - citN_1 citN_2
+[22:42:44] Fixed 2 duplicate /gene - mshD_1 mshD_2
+[22:42:44] Fixed 3 duplicate /gene - pdaC_1 pdaC_2 pdaC_3
+[22:42:44] Fixed 2 duplicate /gene - sodA_1 sodA_2
+[22:42:44] Fixed 2 duplicate /gene - ydjZ_1 ydjZ_2
+[22:42:44] Fixed 2 duplicate /gene - gutB_1 gutB_2
+[22:42:44] Fixed 2 duplicate /gene - norG_1 norG_2
+[22:42:44] Fixed 2 duplicate /gene - mtcA1_1 mtcA1_2
+[22:42:44] Fixed 2 duplicate /gene - fadH_1 fadH_2
+[22:42:44] Fixed 4 duplicate /gene - araQ_1 araQ_2 araQ_3 araQ_4
+[22:42:44] Fixed 2 duplicate /gene - mntP_1 mntP_2
+[22:42:44] Fixed 2 duplicate /gene - oxdD_1 oxdD_2
+[22:42:44] Fixed 2 duplicate /gene - aspA_1 aspA_2
+[22:42:44] Fixed 3 duplicate /gene - glpQ_1 glpQ_2 glpQ_3
+[22:42:44] Fixed 2 duplicate /gene - ltaS1_1 ltaS1_2
+[22:42:44] Fixed 2 duplicate /gene - aaaT_1 aaaT_2
+[22:42:44] Fixed 2 duplicate /gene - opcR_1 opcR_2
+[22:42:44] Fixed 2 duplicate /gene - tadA_1 tadA_2
+[22:42:44] Fixed 2 duplicate /gene - mntH_1 mntH_2
+[22:42:44] Fixed 3 duplicate /gene - ybbH_1 ybbH_2 ybbH_3
+[22:42:44] Fixed 2 duplicate /gene - ohrR_1 ohrR_2
+[22:42:44] Fixed 2 duplicate /gene - crcB_1 crcB_2
+[22:42:44] Fixed 2 duplicate /gene - wecD_1 wecD_2
+[22:42:44] Fixed 2 duplicate /gene - ykoJ_1 ykoJ_2
+[22:42:44] Fixed 3 duplicate /gene - proA_1 proA_2 proA_3
+[22:42:44] Fixed 2 duplicate /gene - gltR_1 gltR_2
+[22:42:44] Fixed 3 duplicate /gene - ydaF_1 ydaF_2 ydaF_3
+[22:42:44] Fixed 4 duplicate /gene - pbuE_1 pbuE_2 pbuE_3 pbuE_4
+[22:42:44] Fixed 2 duplicate /gene - uxaC_1 uxaC_2
+[22:42:44] Fixed 3 duplicate /gene - htpX_1 htpX_2 htpX_3
+[22:42:44] Fixed 2 duplicate /gene - gdh_1 gdh_2
+[22:42:44] Fixed 2 duplicate /gene - gfo_1 gfo_2
+[22:42:44] Fixed 3 duplicate /gene - yxiD_1 yxiD_2 yxiD_3
+[22:42:44] Fixed 2 duplicate /gene - yugI_1 yugI_2
+[22:42:44] Fixed 2 duplicate /gene - rbsB_1 rbsB_2
+[22:42:44] Fixed 2 duplicate /gene - stoA_1 stoA_2
+[22:42:44] Fixed 2 duplicate /gene - pta_1 pta_2
+[22:42:44] Fixed 2 duplicate /gene - alsT_1 alsT_2
+[22:42:44] Fixed 2 duplicate /gene - yndE_1 yndE_2
+[22:42:44] Fixed 6 duplicate /gene - rapA_1 rapA_2 rapA_3 rapA_4 rapA_5 rapA_6
+[22:42:44] Fixed 2 duplicate /gene - tenA_1 tenA_2
+[22:42:44] Fixed 3 duplicate /gene - pucR_1 pucR_2 pucR_3
+[22:42:44] Fixed 2 duplicate /gene - spsA_1 spsA_2
+[22:42:44] Fixed 2 duplicate /gene - rapF_1 rapF_2
+[22:42:44] Fixed 2 duplicate /gene - nikA_1 nikA_2
+[22:42:44] Fixed 3 duplicate /gene - ntaA_1 ntaA_2 ntaA_3
+[22:42:44] Fixed 3 duplicate /gene - glnQ_1 glnQ_2 glnQ_3
+[22:42:44] Fixed 2 duplicate /gene - ykkD_1 ykkD_2
+[22:42:44] Fixed 2 duplicate /gene - gloB_1 gloB_2
+[22:42:44] Fixed 2 duplicate /gene - proB_1 proB_2
+[22:42:44] Fixed 2 duplicate /gene - desK_1 desK_2
+[22:42:44] Fixed 3 duplicate /gene - lcfB_1 lcfB_2 lcfB_3
+[22:42:44] Fixed 2 duplicate /gene - isdE_1 isdE_2
+[22:42:44] Fixed 2 duplicate /gene - mgsR_1 mgsR_2
+[22:42:44] Fixed 2 duplicate /gene - ybbA_1 ybbA_2
+[22:42:44] Fixed 3 duplicate /gene - flgG_1 flgG_2 flgG_3
+[22:42:44] Fixed 3 duplicate /gene - abh_1 abh_2 abh_3
+[22:42:44] Fixed 2 duplicate /gene - dapH_1 dapH_2
+[22:42:44] Fixed 2 duplicate /gene - lrpC_1 lrpC_2
+[22:42:44] Fixed 2 duplicate /gene - ydhP_1 ydhP_2
+[22:42:44] Fixed 2 duplicate /gene - dppA_1 dppA_2
+[22:42:44] Fixed 2 duplicate /gene - bmrR_1 bmrR_2
+[22:42:44] Fixed 2 duplicate /gene - feuA_1 feuA_2
+[22:42:44] Fixed 2 duplicate /gene - fabF_1 fabF_2
+[22:42:44] Fixed 2 duplicate /gene - tmpC_1 tmpC_2
+[22:42:44] Fixed 3 duplicate /gene - fhuD_1 fhuD_2 fhuD_3
+[22:42:44] Fixed 3 duplicate /gene - pdhD_1 pdhD_2 pdhD_3
+[22:42:44] Fixed 2 duplicate /gene - metQ_1 metQ_2
+[22:42:44] Fixed 2 duplicate /gene - bcrC_1 bcrC_2
+[22:42:44] Fixed 2 duplicate /gene - nikB_1 nikB_2
+[22:42:44] Fixed 2 duplicate /gene - rsmH_1 rsmH_2
+[22:42:44] Fixed 2 duplicate /gene - ykoD_1 ykoD_2
+[22:42:44] Fixed 2 duplicate /gene - yofA_1 yofA_2
+[22:42:44] Fixed 2 duplicate /gene - ytmI_1 ytmI_2
+[22:42:44] Fixed 2 duplicate /gene - mglA_1 mglA_2
+[22:42:44] Fixed 3 duplicate /gene - licR_1 licR_2 licR_3
+[22:42:44] Fixed 2 duplicate /gene - yxxD_1 yxxD_2
+[22:42:44] Fixed 2 duplicate /gene - carB_1 carB_2
+[22:42:44] Fixed 2 duplicate /gene - tcyK_1 tcyK_2
+[22:42:44] Fixed 2 duplicate /gene - bcp_1 bcp_2
+[22:42:44] Fixed 2 duplicate /gene - rspR_1 rspR_2
+[22:42:44] Fixed 3 duplicate /gene - ftsW_1 ftsW_2 ftsW_3
+[22:42:44] Fixed 2 duplicate /gene - tagT_1 tagT_2
+[22:42:44] Fixed 2 duplicate /gene - kinE_1 kinE_2
+[22:42:44] Fixed 2 duplicate /gene - yecS_1 yecS_2
+[22:42:44] Fixed 2 duplicate /gene - rsfA_1 rsfA_2
+[22:42:44] Fixed 2 duplicate /gene - marR_1 marR_2
+[22:42:44] Fixed 2 duplicate /gene - cdaR_1 cdaR_2
+[22:42:44] Fixed 3 duplicate /gene - natA_1 natA_2 natA_3
+[22:42:44] Fixed 3 duplicate /gene - walR_1 walR_2 walR_3
+[22:42:44] Fixed 2 duplicate /gene - dinB_1 dinB_2
+[22:42:44] Fixed 4 duplicate /gene - mhqR_1 mhqR_2 mhqR_3 mhqR_4
+[22:42:44] Fixed 2 duplicate /gene - carA_1 carA_2
+[22:42:44] Fixed 2 duplicate /gene - gerBA_1 gerBA_2
+[22:42:44] Fixed 4 duplicate /gene - fruA_1 fruA_2 fruA_3 fruA_4
+[22:42:44] Fixed 6 duplicate /gene - oppD_1 oppD_2 oppD_3 oppD_4 oppD_5 oppD_6
+[22:42:44] Fixed 2 duplicate /gene - acoA_1 acoA_2
+[22:42:44] Fixed 2 duplicate /gene - gabP_1 gabP_2
+[22:42:44] Fixed 2 duplicate /gene - merR1_1 merR1_2
+[22:42:44] Fixed 2 duplicate /gene - yhcN_1 yhcN_2
+[22:42:44] Fixed 2 duplicate /gene - gerPF_1 gerPF_2
+[22:42:44] Fixed 2 duplicate /gene - flhB_1 flhB_2
+[22:42:44] Fixed 2 duplicate /gene - paiB_1 paiB_2
+[22:42:44] Fixed 2 duplicate /gene - yafV_1 yafV_2
+[22:42:44] Fixed 2 duplicate /gene - prsA2_1 prsA2_2
+[22:42:44] Fixed 3 duplicate /gene - rluD_1 rluD_2 rluD_3
+[22:42:44] Fixed 3 duplicate /gene - gltC_1 gltC_2 gltC_3
+[22:42:44] Fixed 2 duplicate /gene - gatC_1 gatC_2
+[22:42:44] Fixed 2 duplicate /gene - resA_1 resA_2
+[22:42:44] Fixed 2 duplicate /gene - proS_1 proS_2
+[22:42:44] Fixed 2 duplicate /gene - ghrB_1 ghrB_2
+[22:42:44] Fixed 2 duplicate /gene - putR_1 putR_2
+[22:42:44] Fixed 2 duplicate /gene - ywiE_1 ywiE_2
+[22:42:44] Fixed 2 duplicate /gene - ydiN_1 ydiN_2
+[22:42:44] Fixed 2 duplicate /gene - rapG_1 rapG_2
+[22:42:44] Fixed 2 duplicate /gene - priA_1 priA_2
+[22:42:44] Fixed 2 duplicate /gene - ypjQ_1 ypjQ_2
+[22:42:44] Fixed 2 duplicate /gene - ydjM_1 ydjM_2
+[22:42:44] Fixed 2 duplicate /gene - licB_1 licB_2
+[22:42:44] Fixed 2 duplicate /gene - rocC_1 rocC_2
+[22:42:44] Fixed 2 duplicate /gene - dat_1 dat_2
+[22:42:44] Fixed 2 duplicate /gene - iscS_1 iscS_2
+[22:42:44] Fixed 2 duplicate /gene - cysK_1 cysK_2
+[22:42:44] Fixed 3 duplicate /gene - rocR_1 rocR_2 rocR_3
+[22:42:44] Fixed 2 duplicate /gene - deoR_1 deoR_2
+[22:42:44] Fixed 2 duplicate /gene - lytC_1 lytC_2
+[22:42:44] Fixed 2 duplicate /gene - spo0A_1 spo0A_2
+[22:42:44] Fixed 2 duplicate /gene - bacF_1 bacF_2
+[22:42:44] Fixed 5 duplicate /gene - licT_1 licT_2 licT_3 licT_4 licT_5
+[22:42:44] Fixed 2 duplicate /gene - htrA_1 htrA_2
+[22:42:44] Fixed 2 duplicate /gene - accA_1 accA_2
+[22:42:44] Fixed 4 duplicate /gene - yhdG_1 yhdG_2 yhdG_3 yhdG_4
+[22:42:44] Fixed 2 duplicate /gene - prpE_1 prpE_2
+[22:42:44] Fixed 2 duplicate /gene - murG_1 murG_2
+[22:42:44] Fixed 4 duplicate /gene - yfmS_1 yfmS_2 yfmS_3 yfmS_4
+[22:42:44] Fixed 2 duplicate /gene - yvoA_1 yvoA_2
+[22:42:44] Fixed 2 duplicate /gene - fecE_1 fecE_2
+[22:42:44] Fixed 3 duplicate /gene - kinA_1 kinA_2 kinA_3
+[22:42:44] Fixed 2 duplicate /gene - speA_1 speA_2
+[22:42:44] Fixed 3 duplicate /gene - ccpA_1 ccpA_2 ccpA_3
+[22:42:44] Fixed 4 duplicate /gene - bglH_1 bglH_2 bglH_3 bglH_4
+[22:42:44] Fixed 3 duplicate /gene - ysdC_1 ysdC_2 ysdC_3
+[22:42:44] Fixed 2 duplicate /gene - gmuD_1 gmuD_2
+[22:42:44] Fixed 2 duplicate /gene - rutD_1 rutD_2
+[22:42:44] Fixed 4 duplicate /gene - yusO_1 yusO_2 yusO_3 yusO_4
+[22:42:44] Fixed 2 duplicate /gene - swrC_1 swrC_2
+[22:42:44] Fixed 2 duplicate /gene - ycdA_1 ycdA_2
+[22:42:44] Fixed 2 duplicate /gene - gltP_1 gltP_2
+[22:42:44] Fixed 3 duplicate /gene - isdC_1 isdC_2 isdC_3
+[22:42:44] Fixed 2 duplicate /gene - gltT_1 gltT_2
+[22:42:44] Fixed 2 duplicate /gene - recQ_1 recQ_2
+[22:42:44] Fixed 2 duplicate /gene - licH_1 licH_2
+[22:42:44] Fixed 3 duplicate /gene - acsA_1 acsA_2 acsA_3
+[22:42:44] Fixed 2 duplicate /gene - carD_1 carD_2
+[22:42:44] Fixed 2 duplicate /gene - bepA_1 bepA_2
+[22:42:44] Fixed 2 duplicate /gene - dus_1 dus_2
+[22:42:44] Fixed 2 duplicate /gene - pfyP_1 pfyP_2
+[22:42:44] Fixed 2 duplicate /gene - metE_1 metE_2
+[22:42:44] Fixed 2 duplicate /gene - ydjF_1 ydjF_2
+[22:42:44] Fixed 3 duplicate /gene - ydaD_1 ydaD_2 ydaD_3
+[22:42:44] Fixed 2 duplicate /gene - ddc_1 ddc_2
+[22:42:44] Fixed 3 duplicate /gene - yceD_1 yceD_2 yceD_3
+[22:42:44] Fixed 3 duplicate /gene - lacF_1 lacF_2 lacF_3
+[22:42:44] Fixed 3 duplicate /gene - pgdA_1 pgdA_2 pgdA_3
+[22:42:44] Fixed 2 duplicate /gene - dppC_1 dppC_2
+[22:42:44] Fixed 5 duplicate /gene - mcpA_1 mcpA_2 mcpA_3 mcpA_4 mcpA_5
+[22:42:44] Fixed 3 duplicate /gene - dppB_1 dppB_2 dppB_3
+[22:42:44] Fixed 2 duplicate /gene - phoP_1 phoP_2
+[22:42:44] Fixed 2 duplicate /gene - mccF_1 mccF_2
+[22:42:44] Fixed 2 duplicate /gene - xerD_1 xerD_2
+[22:42:44] Fixed 2 duplicate /gene - sigV_1 sigV_2
+[22:42:44] Fixed 2 duplicate /gene - rlmCD_1 rlmCD_2
+[22:42:44] Fixed 2 duplicate /gene - yfhA_1 yfhA_2
+[22:42:44] Fixed 2 duplicate /gene - dnaX_1 dnaX_2
+[22:42:44] Fixed 2 duplicate /gene - iolU_1 iolU_2
+[22:42:44] Fixed 5 duplicate /gene - oppF_1 oppF_2 oppF_3 oppF_4 oppF_5
+[22:42:44] Fixed 2 duplicate /gene - rnmV_1 rnmV_2
+[22:42:44] Fixed 3 duplicate /gene - adaA_1 adaA_2 adaA_3
+[22:42:44] Fixed 3 duplicate /gene - thrC_1 thrC_2 thrC_3
+[22:42:44] Fixed 5 duplicate /gene - proC_1 proC_2 proC_3 proC_4 proC_5
+[22:42:44] Fixed 2 duplicate /gene - maeA_1 maeA_2
+[22:42:44] Fixed 2 duplicate /gene - dhaA_1 dhaA_2
+[22:42:44] Fixed 3 duplicate /gene - mcpB_1 mcpB_2 mcpB_3
+[22:42:44] Fixed 3 duplicate /gene - patA_1 patA_2 patA_3
+[22:42:44] Fixed 2 duplicate /gene - gntT_1 gntT_2
+[22:42:44] Fixed 2 duplicate /gene - ytrA_1 ytrA_2
+[22:42:44] Fixed 2 duplicate /gene - dcuR_1 dcuR_2
+[22:42:44] Fixed 2 duplicate /gene - gmuE_1 gmuE_2
+[22:42:44] Fixed 2 duplicate /gene - yxeP_1 yxeP_2
+[22:42:44] Fixed 3 duplicate /gene - resE_1 resE_2 resE_3
+[22:42:44] Fixed 2 duplicate /gene - ykkC_1 ykkC_2
+[22:42:44] Fixed 2 duplicate /gene - dapA_1 dapA_2
+[22:42:44] Fixed 2 duplicate /gene - bdlA_1 bdlA_2
+[22:42:44] Fixed 2 duplicate /gene - gerPA_1 gerPA_2
+[22:42:44] Fixed 2 duplicate /gene - cysE_1 cysE_2
+[22:42:44] Fixed 3 duplicate /gene - yxeN_1 yxeN_2 yxeN_3
+[22:42:44] Fixed 3 duplicate /gene - gerAA_1 gerAA_2 gerAA_3
+[22:42:44] Fixed 2 duplicate /gene - nlhH_1 nlhH_2
+[22:42:44] Fixed 3 duplicate /gene - kstR2_1 kstR2_2 kstR2_3
+[22:42:44] Fixed 2 duplicate /gene - ccsA_1 ccsA_2
+[22:42:44] Fixed 4 duplicate /gene - yxlF_1 yxlF_2 yxlF_3 yxlF_4
+[22:42:44] Fixed 3 duplicate /gene - liaR_1 liaR_2 liaR_3
+[22:42:44] Fixed 2 duplicate /gene - dinG_1 dinG_2
+[22:42:44] Fixed 2 duplicate /gene - yfiY_1 yfiY_2
+[22:42:44] Fixed 3 duplicate /gene - dcuS_1 dcuS_2 dcuS_3
+[22:42:44] Fixed 3 duplicate /gene - gabR_1 gabR_2 gabR_3
+[22:42:44] Fixed 2 duplicate /gene - rbsC_1 rbsC_2
+[22:42:44] Fixed 2 duplicate /gene - pheT_1 pheT_2
+[22:42:44] Fixed 2 duplicate /gene - pepT_1 pepT_2
+[22:42:44] Fixed 3 duplicate /gene - ecsA_1 ecsA_2 ecsA_3
+[22:42:44] Fixed 2 duplicate /gene - gerE_1 gerE_2
+[22:42:44] Fixed 2 duplicate /gene - glvR_1 glvR_2
+[22:42:44] Fixed 2 duplicate /gene - brnQ_1 brnQ_2
+[22:42:44] Fixed 2 duplicate /gene - metN_1 metN_2
+[22:42:44] Fixed 2 duplicate /gene - gluP_1 gluP_2
+[22:42:44] Fixed 2 duplicate /gene - tagF_1 tagF_2
+[22:42:44] Fixed 2 duplicate /gene - rpoE_1 rpoE_2
+[22:42:44] Fixed 2 duplicate /gene - yodC_1 yodC_2
+[22:42:44] Fixed 2 duplicate /gene - dpp5_1 dpp5_2
+[22:42:44] Fixed 2 duplicate /gene - tusA_1 tusA_2
+[22:42:44] Fixed 2 duplicate /gene - rsbRD_1 rsbRD_2
+[22:42:44] Fixed 2 duplicate /gene - gloA_1 gloA_2
+[22:42:44] Fixed 2 duplicate /gene - glnK_1 glnK_2
+[22:42:44] Fixed 2 duplicate /gene - katA_1 katA_2
+[22:42:44] Fixed 2 duplicate /gene - iolA_1 iolA_2
+[22:42:44] Fixed 2 duplicate /gene - garR_1 garR_2
+[22:42:44] Fixed 2 duplicate /gene - birA_1 birA_2
+[22:42:44] Fixed 312 colliding /gene names.
+[22:42:44] Adding /locus_tag identifiers
+[22:42:44] Assigned 3711 locus_tags to CDS and RNA features.
+[22:42:44] Writing outputs to bacillus_australimaris-assembly.fna.prokka_annotation/
+[22:42:46] Generating annotation statistics file
+[22:42:46] Generating Genbank and Sequin files
+[22:42:46] Running: tbl2asn -V b -a r10k -l paired-ends -M n -N 1 -y 'Annotated using prokka 1.13 from https://github.com/tseemann/prokka' -Z bacillus_australimaris\-assembly\.fna\.prokka_annotation\/bacillus_australimaris\-assembly\.fna\.err -i bacillus_australimaris\-assembly\.fna\.prokka_annotation\/bacillus_australimaris\-assembly\.fna\.fsa 2> /dev/null
+[22:43:34] Could not run command: tbl2asn -V b -a r10k -l paired-ends -M n -N 1 -y 'Annotated using prokka 1.13 from https://github.com/tseemann/prokka' -Z bacillus_australimaris\-assembly\.fna\.prokka_annotation\/bacillus_australimaris\-assembly\.fna\.err -i bacillus_australimaris\-assembly\.fna\.prokka_annotation\/bacillus_australimaris\-assembly\.fna\.fsa 2> /dev/null
