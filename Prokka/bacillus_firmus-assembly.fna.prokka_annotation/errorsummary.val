@@ -1,5 +1,0 @@
-     2 ERROR:   SEQ_FEAT.BadProteinName
-  7655 ERROR:   SEQ_FEAT.GeneXrefWithoutGene
-     1 ERROR:   SEQ_FEAT.MissingTrnaAA
-     1 ERROR:   SEQ_FEAT.OnlyGeneXrefs
-     6 WARNING: SEQ_FEAT.ProteinNameEndsInBracket
