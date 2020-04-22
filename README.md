@@ -110,6 +110,7 @@ Before running the alien_hunter make sure to move into the Alien_hunter-1.7 fold
 The process is for command for alien_hunter is described in the "horizontal_gene_transfer.sh" script. This script needs to be submitted in the queue system which will take approximately 3-4 hours for all 10 genome sequences. The program can be individually run for each of the raw sequences. Simply run a script with:
 
 ```#!/bin/bash```
+
 ```alien_hunter sequence_file output_filename```
 
 Output will generate a histogram in the text format and raw scores in the output file w./.sco giving the proportions of the horizontally tranferred regions. you can find the related information in the output file from the queue system as well. 
