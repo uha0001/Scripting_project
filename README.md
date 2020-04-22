@@ -102,7 +102,7 @@ Link to download alien_hunter to ASC account:
 
 ```wget ftp://ftp.sanger.ac.uk/pub/resources/software/alien_hunter/alien_hunter.tar.gz```
 
-The download is described in "install_alien_hunter.sh" script
+The download is described in "install_alien_hunter.sh" script. After you run the script alien_hunter-1.7 will be generated. 
 
 ### Instructions for usage:
 Before running the alien_hunter make sure to move into the Alien_hunter-1.7 folder along with the data files (w/ extension .fna. **Make sure that files with the extention .fna are in the alien_hunter-1.7**.
